@@ -817,6 +817,8 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.instance_2 = new lib.im3_1();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0,115.3,0.767,0.767);
+	this.instance_2.filters = [new cjs.ColorFilter(0.67, 0.67, 0.67, 1, 0, 0, 0, 0)];
+	this.instance_2.cache(-152,-68,304,170);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
@@ -868,8 +870,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		.staggerFrom(imgs, .9, {x: '+='+w,  ease: Expo.easeOut}, .2, 'fr1+=.3')
 		
 		.add('fr1e', '+=1.3')
-		.staggerTo(t1, .5, {x: '-=150', alpha: 0, ease: Expo.easeOut}, .2,  'fr1e')
-		.staggerTo(imgs, .6, {x: '-='+w,  ease: Expo.easeOut}, .2, 'fr1e+=.3')
+		.staggerTo(t1, .5, {x: '-=150', alpha: 0, ease: Expo.easeOut}, .1,  'fr1e')
+		.staggerTo(imgs, .6, {x: '-='+w,  ease: Expo.easeOut}, .1, 'fr1e+=.15')
 		.to(this.header, .5, {alpha:0}, 'fr1e+=.3') 
 		.from(this.logo, .5, {alpha:0}, 'fr1e+=.6') 
 		
@@ -884,7 +886,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		.to(this.logo, .5, {y: '-=50', alpha:0}, 'fr2e+=.3') 
 		.to(this.plate, .5, {y: 0}, 'fr2e+=.6') 
 		
-		.to(this.red, .7, {alpha:0})
+		.to(this.red, .7, {alpha:0}, '-=.2')
+		.staggerFrom([this.logo2, this.phone, this.url], .7, {y:'-=50', alpha: 0, ease: Expo.easeOut}, .15, '-=.2')
 		.from(this.cur, .6, {y: h, ease: Expo.easeOut})
 		.to(this.cur, .3, {scaleX: '-=.15', scaleY: '-=.15'})
 		.to(this.cur, .5, {scaleX: '+=.15', scaleY: '+=.15'})
@@ -970,11 +973,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.cur).wait(1));
 
 	// url
-	this.instance = new lib.url();
-	this.instance.parent = this;
-	this.instance.setTransform(114.5,350,1,1,0,0,0,0,13.1);
+	this.url = new lib.url();
+	this.url.parent = this;
+	this.url.setTransform(114.5,350,1,1,0,0,0,0,13.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.url).wait(1));
 
 	// logo2
 	this.logo2 = new lib.logo();
@@ -1007,10 +1010,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/im1.jpg?1494696944681", id:"im1"},
-		{src:"images/im2.jpg?1494696944681", id:"im2"},
-		{src:"images/im3.jpg?1494696944681", id:"im3"},
-		{src:"images/im4.jpg?1494696944681", id:"im4"}
+		{src:"images/im1.jpg?1494699923826", id:"im1"},
+		{src:"images/im2.jpg?1494699923826", id:"im2"},
+		{src:"images/im3.jpg?1494699923826", id:"im3"},
+		{src:"images/im4.jpg?1494699923826", id:"im4"}
 	],
 	preloads: []
 };
