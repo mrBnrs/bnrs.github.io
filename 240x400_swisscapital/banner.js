@@ -1072,16 +1072,60 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#D82333").s().p("Ag5CMQgJAAgHgGQgGgIAAgJIAAjpQAAgJAGgHQAHgHAJAAIByAAQAKAAAGAHQAHAHAAAJIAADpQAAAJgHAIQgGAGgKAAgAgHBhQgDAEgBAEQABAFADAEQADADAEAAQAFAAADgDQADgEAAgFQAAgEgDgEQgDgEgFAAQgEAAgDAEgAg5BSIByAAIAAijIhyAAgAgWhtQAAAFAFAAIAiAAQAFAAABgFQgBgHgFAAIgiAAQgFAAAAAHg");
-	this.shape.setTransform(-43.6,0);
+	this.shape.graphics.f("#D82233").s().p("AgOA3IAGgNIAEgNIAEgOIAAgPIAAgOIgEgOQgCgJgIgRIAJgHQAFAGADAHQAEAIADAIQADAHABAJIABAQIgBARQgBAJgDAHQgDAIgEAIQgDAHgFAGg");
+	this.shape.setTransform(48,20.7);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#000000").s().p("ADkBMQgWgeAAguQAAgtAWgeQAZgiAsAAQAtAAAZAiQAWAeAAAtQAAAugWAeQgZAigtAAQgsAAgZgigAEGAAQAAA+AjAAQAkAAAAg+QAAg9gkAAQgjAAAAA9gAAdBMQgXgeAAguQAAgtAXgeQAZgiAsAAQAsAAAZAiQAWAeAAAtQAAAugWAeQgZAigsAAQgsAAgZgigAA+AAQAAA+AkAAQAkAAAAg+QAAg9gkAAQgkAAAAA9gAiqBMQgWgeAAguQAAgtAWgeQAZgiAsAAQAsAAAZAiQAXAeAAAtQAAAugXAeQgZAigsAAQgsAAgZgigAiJAAQAAA+AkAAQAkAAAAg+QAAg9gkAAQgkAAAAA9gAlhBlQgWgJgNgPIAcgmQAKALARAGQAQAGAPAAQARAAAKgGQAJgGAAgJQAAgKgIgEQgJgEgVAAIgdAAIAAgwIAdABQAiAAAAgRQAAgJgKgGQgKgFgQAAQgdAAgYAVIgagjQAfgiA2AAQAoAAAXAQQAWAQAAAaQAAASgOAOQgNANgUADQATACAPAMQAQAPAAAVQAAAcgYASQgYARgoAAQgdAAgYgJg");
-	this.shape_1.setTransform(12.7,0.4);
+	this.shape_1.graphics.f("#D82233").s().p("AgOAhQgGgDgFgFQgEgFgDgGQgCgGAAgIQAAgGACgGQADgHAEgFQAFgFAGgCQAHgDAHAAQAIAAAGADQAHACAEAFQAFAFACAHQADAGAAAGQAAAIgDAGQgCAGgFAFQgEAFgHADQgGACgIAAQgHAAgHgCgAgIgUIgGAGQgCACgBAFQgCAEAAADQAAAEACAEQABAFACADIAGAFQAEABAEAAQAEAAAEgBIAGgFQADgDABgFIABgIIgBgHIgEgHIgGgGQgEgCgEAAQgEAAgEACg");
+	this.shape_1.setTransform(42.3,20.7);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#D82233").s().p("AAQAiIAAgcIgfAAIAAAcIgOAAIAAhDIAOAAIAAAbIAfAAIAAgbIAOAAIAABDg");
+	this.shape_2.setTransform(34.3,20.7);
 
-}).prototype = getMCSymbolPrototype(lib.phone, new cjs.Rectangle(-51.6,-14,103.3,28), null);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#D82233").s().p("AgGAiIAAg2IgUAAIAAgNIA1AAIAAANIgUAAIAAA2g");
+	this.shape_3.setTransform(27.4,20.7);
+
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#D82233").s().p("AgOAiQgEgBgDgDQgEgDgCgEQgCgFAAgFQAAgFACgEQACgEAEgDIAHgDIAJgBQAFAAAGACQAGACADADIAAgJQAAgDgBgCIgDgFIgFgCIgGgBQgFAAgFACQgFACgFAFIgGgKQAFgEAJgEQAGgDAIAAQAGAAAFABQAFABAEADQADADACAEQADAFAAAHIAAAsIgPAAIAAgHQgDAEgGACQgGACgFAAIgJgBgAgKAEQgEAEAAAFQAAAGAEADQAEADAGAAQAEAAAEgBQAFgCACgDIAAgLQgCgDgFgCQgEgBgEAAQgGAAgEACg");
+	this.shape_4.setTransform(20.5,20.7);
+
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#D82233").s().p("AghAWIAEgBIADgEIAEgSIAFggIAzAAIAABCIgPAAIAAg2IgXAAIgDAVIgDAPQgCAHgDAFQgDADgFACQgEACgGAAg");
+	this.shape_5.setTransform(12.6,20.8);
+
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#D82233").s().p("AAQAiIAAg2IgfAAIAAA2IgOAAIAAhDIA7AAIAABDg");
+	this.shape_6.setTransform(5,20.7);
+
+	this.shape_7 = new cjs.Shape();
+	this.shape_7.graphics.f("#D82233").s().p("AgJAhQgGgDgFgFQgEgEgDgHQgCgGAAgIQAAgHACgGQADgGAEgFQAFgFAGgCQAHgDAHAAIAIABIAIACQAFAEAEAFIgJAJQgGgJgKAAQgEAAgDACQgEACgDADIgEAHQgBAEAAAEQAAAFABAEQACAEACADQADAEAEABQADABAEAAQAFAAAEgBQAEgDADgEIAJAJQgEAGgFADQgEACgEAAIgIABQgHAAgHgCg");
+	this.shape_7.setTransform(-2.3,20.7);
+
+	this.shape_8 = new cjs.Shape();
+	this.shape_8.graphics.f("#D82233").s().p("AgMAhQgGgDgFgEQgFgFgCgHQgDgGAAgIQAAgGADgGQACgHAFgFQAEgFAHgCQAGgDAGAAQAIAAAGADQAGACAFAFQAEAFACAHQADAGAAAIIAAADIg0AAQABAEACAEIAEAFQADADADABQAEACAEgBQAFAAAFgBQAGgCADgEIAHAKQgFAEgHADQgHACgJAAQgGAAgHgCgAATgEIgBgHIgDgFIgGgFQgEgBgFAAQgDAAgEABIgGAFIgDAFIgCAHIAlAAIAAAAg");
+	this.shape_8.setTransform(-9.7,20.7);
+
+	this.shape_9 = new cjs.Shape();
+	this.shape_9.graphics.f("#D82233").s().p("AgHAvIgHgDQgGgCgFgGQgEgFgCgGQgDgIAAgIIACgUIADgIIAEgIIAEgEIAGgFQAHgDAIgBIAOgDQAEgBAAgCIAOAAQAAAEgDAEQgCADgFACIgJADIgKACQgFAAgEACQgFACgDACIgEAFIgDAHQAEgGAHgDIAGgCIAHgBQAHAAAGADQAFACAFAGQAEAEACAHQADAFAAAHQAAAHgDAGQgCAHgFAFQgEAFgGADQgKACgFAAgAgIgIQgDACgDAEQgCACgBAEQgCAEAAAEQAAAEACAEQABAFACADIAGAFQAEABAEAAQAEAAAEgBIAGgFIAEgIIABgIIgBgIIgEgGQgCgEgEgCQgEgCgEAAQgEAAgEACg");
+	this.shape_9.setTransform(-17.7,19.5);
+
+	this.shape_10 = new cjs.Shape();
+	this.shape_10.graphics.f("#D82233").s().p("AgCAxIgGgQIgFgQIgBgRIABgQIAFgQIAGgQQADgHAFgGIAJAHQgIARgDAJQgBAGgBAIIgBAOIABAPQABAIABAGQADAJAIARIgJAHQgFgGgDgHg");
+	this.shape_10.setTransform(-23.4,20.7);
+
+	this.shape_11 = new cjs.Shape();
+	this.shape_11.graphics.f("#D82333").s().p("Ag5CMQgJAAgHgGQgGgIAAgJIAAjpQAAgJAGgHQAHgHAJAAIByAAQAKAAAGAHQAHAHAAAJIAADpQAAAJgHAIQgGAGgKAAgAgHBhQgDAEgBAEQABAFADAEQADADAEAAQAFAAADgDQADgEAAgFQAAgEgDgEQgDgEgFAAQgEAAgDAEgAg5BSIByAAIAAijIhyAAgAgWhtQAAAFAFAAIAiAAQAFAAABgFQgBgHgFAAIgiAAQgFAAAAAHg");
+	this.shape_11.setTransform(-43.6,0);
+
+	this.shape_12 = new cjs.Shape();
+	this.shape_12.graphics.f("#000000").s().p("ADkBMQgWgeAAguQAAgtAWgeQAZgiAsAAQAtAAAZAiQAWAeAAAtQAAAugWAeQgZAigtAAQgsAAgZgigAEGAAQAAA+AjAAQAkAAAAg+QAAg9gkAAQgjAAAAA9gAAdBMQgXgeAAguQAAgtAXgeQAZgiAsAAQAsAAAZAiQAWAeAAAtQAAAugWAeQgZAigsAAQgsAAgZgigAA+AAQAAA+AkAAQAkAAAAg+QAAg9gkAAQgkAAAAA9gAiqBMQgWgeAAguQAAgtAWgeQAZgiAsAAQAsAAAZAiQAXAeAAAtQAAAugXAeQgZAigsAAQgsAAgZgigAiJAAQAAA+AkAAQAkAAAAg+QAAg9gkAAQgkAAAAA9gAlhBlQgWgJgNgPIAcgmQAKALARAGQAQAGAPAAQARAAAKgGQAJgGAAgJQAAgKgIgEQgJgEgVAAIgdAAIAAgwIAdABQAiAAAAgRQAAgJgKgGQgKgFgQAAQgdAAgYAVIgagjQAfgiA2AAQAoAAAXAQQAWAQAAAaQAAASgOAOQgNANgUADQATACAPAMQAQAPAAAVQAAAcgYASQgYARgoAAQgdAAgYgJg");
+	this.shape_12.setTransform(12.7,0.4);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.phone, new cjs.Rectangle(-51.6,-14,103.9,44.3), null);
 
 
 (lib.logo = function(mode,startPosition,loop) {
@@ -1793,10 +1837,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/im1.jpg?1494910949999", id:"im1"},
-		{src:"images/im2.jpg?1494910949999", id:"im2"},
-		{src:"images/im3.jpg?1494910949999", id:"im3"},
-		{src:"images/im4.jpg?1494910949999", id:"im4"}
+		{src:"images/im1.jpg?1494912460836", id:"im1"},
+		{src:"images/im2.jpg?1494912460836", id:"im2"},
+		{src:"images/im3.jpg?1494912460836", id:"im3"},
+		{src:"images/im4.jpg?1494912460836", id:"im4"}
 	],
 	preloads: []
 };
