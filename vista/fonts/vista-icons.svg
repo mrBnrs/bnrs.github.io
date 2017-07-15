@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="vista-icons" horiz-adv-x="500" >
+<font-face font-family="vista-icons" font-weight="400" font-stretch="normal" units-per-em="500" ascent="425" descent="-75" />
+<missing-glyph horiz-adv-x="500" />
+<glyph glyph-name="search" unicode="&#xe800;" d="M321 193q0 52-36 88t-89 37-88-37-37-88 37-88 88-37 89 37 36 88z m143-232q0-15-10-25t-25-11q-15 0-26 11l-95 95q-50-35-112-35-39 0-76 16t-63 42-41 63-16 76 16 76 41 63 63 42 76 15 77-15 63-42 41-63 16-76q0-62-35-111l96-96q10-11 10-25z" horiz-adv-x="464.3" />
+
+<glyph glyph-name="angle-right" unicode="&#xf105;" d="M166 157q0-3-3-6l-130-130q-3-3-6-3t-7 3l-14 14q-2 2-2 6t2 7l110 109-110 110q-2 3-2 6t2 7l14 14q3 2 7 2t6-2l130-130q3-3 3-7z" horiz-adv-x="178.6" />
+
+<glyph glyph-name="angle-down" unicode="&#xf107;" d="M300 220q0-4-3-7l-130-130q-3-3-6-3t-7 3l-130 130q-2 3-2 7t2 6l14 14q3 3 7 3t6-3l110-110 109 110q3 3 7 3t6-3l14-14q3-3 3-6z" horiz-adv-x="321.4" />
+</font>
+</defs>
+</svg>
