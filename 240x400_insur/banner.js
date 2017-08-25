@@ -1999,14 +1999,14 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			.staggerFrom(drops, .4, {alpha: 0}, .08, '-=.7')
 			
 			
-			.add('sl1e', '+=1')
+			.add('sl1e', '+=.8')
 			
 			.staggerTo([this.t1, this.cal, this.sph, this.weather], 1, {x:'-='+w, ease: Expo.easeIn}, .06, 'sl1e', rainOff)
 			.from(this.logo, .9, {scaleX: 0, scaleY: 0, ease: Elastic.easeOut.config(1, .55)}, '-=.2')
 			.showT(arrT2)
 			
 			
-			.add('sl2e', '+=.6')
+			.add('sl2e', '+=1.6')
 			
 			.staggerTo(t2, .5, {x: '-=120', alpha: 0, ease: Sine.easeIn}, .05, 'sl2e')
 			.to(this.logo, .6, {x: l2.x, y: l2.y, ease: Expo.easeInOut}, '-=.2')
@@ -2117,13 +2117,13 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/hand.png?1503640312311", id:"hand"},
-		{src:"images/home.png?1503640312311", id:"home"},
-		{src:"images/logo.png?1503640312311", id:"logo"},
-		{src:"images/ppl.png?1503640312311", id:"ppl"},
-		{src:"images/smc.png?1503640312311", id:"smc"},
-		{src:"images/sph.png?1503640312311", id:"sph"},
-		{src:"images/sun.png?1503640312311", id:"sun"}
+		{src:"images/hand.png?1503640760049", id:"hand"},
+		{src:"images/home.png?1503640760049", id:"home"},
+		{src:"images/logo.png?1503640760049", id:"logo"},
+		{src:"images/ppl.png?1503640760049", id:"ppl"},
+		{src:"images/smc.png?1503640760049", id:"smc"},
+		{src:"images/sph.png?1503640760049", id:"sph"},
+		{src:"images/sun.png?1503640760049", id:"sun"}
 	],
 	preloads: []
 };
