@@ -1,0 +1,2738 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flo Radar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/vendor.min.css">
+
+    <link rel="stylesheet" href="styles/main.min.css">
+
+    <script src='https://cdn.jsdelivr.net/bluebird/latest/bluebird.min.js'></script>
+
+    <script src="scripts/vendor/modernizr.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="scripts/vendor/respond.min.js"></script>
+    <![endif]-->
+
+
+
+  </head>
+  <body >
+  <div id="preloader">
+
+<style type="text/css">.js div#preloader { position: fixed; left: 0; top: 0; z-index: 1999; width: 100%; height: 100%; overflow: visible; background: #fff; display: -webkit-flex;
+display: -ms-flex;display: flex; justify-content: center;-ms-align-items: center;align-items: center;}</style></div>
+
+    <input type="hidden" name="special_fee" id="special_fee" value="holiday price">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+
+    
+<div class="modal modal--menu fade" id="menuModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <nav class="nav nav--menu">
+              <ul class="nav-ul">
+                  <li class="nav-item logo"><a href="index.html" class="logo-link"></a></li>
+                  <li class="nav-item"><a href="shop.html" class="nav-link"><span>Shop Bouquets</span></a></li>
+                  <li class="nav-item"><a href="blog.html" class="nav-link"><span>Hot Blog</span></a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link"><span>Magic</span></a></li>
+                  <li class="nav-item"><a href="profile-planner.html" class="nav-link"><span>Gift Planner</span></a></li>
+                  <li class="nav-item"><a href="#" data-dismiss="modal" class="nav-link chat-us"><span>Chat-us <i class='icon'><img src="images/icons/call-me.svg" alt=""></i></span></a></li>
+              </ul>
+          </nav>
+
+
+          
+          <nav class="nav nav--menu-sec nav--menu-user">
+            <ul class="nav-ul list--nostyle">
+              <li class="nav-item"><a href="#authModal" data-toggle="modal" data-dismiss="modal" data-target="#authModal" data-callpane="#authPane" class="user-link">My Orders</a></li>
+            </ul>
+          </nav>
+          
+
+
+
+          <nav class="nav nav--menu-sec">
+            <ul class="nav-ul list--nostyle">
+
+              <li class="nav-item"><a class="nav-link" href="where_we_deliver.html">Where We Deliver (7 462)</a></li>
+              <li class="nav-item"><a class="nav-link" href="delivery_policy.html">Delivery Policy</a></li>
+              <li class="nav-item"><a class="nav-link" href="reviews.html">Customer Reviews (28)</a></li>
+              <li class="nav-item"><a class="nav-link" href="business.html">For Business</a></li>
+              <li class="nav-item"><a href="#contactsModal" data-toggle="modal" data-target="#contactsModal" class="nav-link"><span>Contacts</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+            </ul>
+          </nav>
+      </div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+</div>
+
+<header class="header
+    
+    header--stickable 
+    header--line 
+    
+    
+  ">
+    <div class="wrapper">
+        <div class="container">
+            <nav class="nav nav--primary">
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="shop.html" class="nav-link"><span>Shop Bouquets</span></a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link"><span>Hot Blog</span></a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link"><span>Magic</span></a></li>
+                    <li class="nav-item"><a href="profile-planner.html" class="nav-link"><span>Gift Planner<span class="discount">-7%</span></span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="index.html" class="logo-link"></a>
+        </div>
+
+        <div class="user-block">
+            
+            <a href="#authModal" data-toggle="modal" data-target="#authModal" data-callpane="#authPane" class="user-link">My Orders</a> 
+        </div>
+        <div class="menu-block medium">
+          <button class="menu-button"  data-toggle="modal" data-target="#menuModal"><span>menu</span></button>
+        </div>
+    </div>
+</header>
+
+  <main class="main">
+  	<section class="content delivery">
+		<div class="container">
+      <div class='wrapper'>
+        <div class='title-block'>
+          <h1>Where We’re Flowering</h1>
+    			<p class="undertitle">We deliver flowers in 7 433+ cities around the world at fixed prices. Yeah.</p>
+          <div class="delivery-city--search">
+            <input type="text" class="form-control sorter"  placeholder="Search for city" value="">
+            <div id="noresults" style="display: none;">
+              There is no <span class="search-query strong"></span> city.
+            </div>
+          </div>
+        </div>
+        <div class="delivery-help-block">
+  				<img src="images/icons/loc-icon.svg" alt="">
+  				<p>Your city is not in the list below? <a href="#contactsModal" data-toggle="modal" data-target="#contactsModal" > Drop us a line</a> and we’ll try to fix it :)</p>
+  			</div>
+      </div>
+      <div id="deliveryCities">
+        
+        <div class="delivery--block">
+          <div class="delivery--letter">A</div>
+          <ul  class="delivery--list">
+            
+            <li class="delivery__item" data-sort="Aachen">
+              <a href="shop.html?city=Aachen"><span class="city">Aachen</span>, Germany</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Abbenrode">
+              <a href="shop.html?city=Abbenrode"><span class="city">Abbenrode</span>, Germany</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Abbotsford">
+              <a href="shop.html?city=Abbotsford"><span class="city">Abbotsford</span>, Canada</a>
+              
+                <span class="state">BC</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Aberdeen">
+              <a href="shop.html?city=Aberdeen"><span class="city">Aberdeen</span>, USA</a>
+              
+                <span class="state">SD</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Aberdeen">
+              <a href="shop.html?city=Aberdeen"><span class="city">Aberdeen</span>, USA</a>
+              
+                <span class="state">NC</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Abu Dhabi">
+              <a href="shop.html?city=Abu Dhabi"><span class="city">Abu Dhabi</span>, UAE</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Addison">
+              <a href="shop.html?city=Addison"><span class="city">Addison</span>, USA</a>
+              
+                <span class="state">TX</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Agoura Hills">
+              <a href="shop.html?city=Agoura Hills"><span class="city">Agoura Hills</span>, USA</a>
+              
+                <span class="state">CA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Aiea">
+              <a href="shop.html?city=Aiea"><span class="city">Aiea</span>, USA</a>
+              
+                <span class="state">HI</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Airway Heights">
+              <a href="shop.html?city=Airway Heights"><span class="city">Airway Heights</span>, USA</a>
+              
+                <span class="state">WA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Akron">
+              <a href="shop.html?city=Akron"><span class="city">Akron</span>, USA</a>
+              
+                <span class="state">OH</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Al Ain">
+              <a href="shop.html?city=Al Ain"><span class="city">Al Ain</span>, UAE</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Albany">
+              <a href="shop.html?city=Albany"><span class="city">Albany</span>, USA</a>
+              
+                <span class="state">GA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Albany">
+              <a href="shop.html?city=Albany"><span class="city">Albany</span>, USA</a>
+              
+                <span class="state">NY</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Albuquerque">
+              <a href="shop.html?city=Albuquerque"><span class="city">Albuquerque</span>, USA</a>
+              
+                <span class="state">NM</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Alexandria">
+              <a href="shop.html?city=Alexandria"><span class="city">Alexandria</span>, USA</a>
+              
+                <span class="state">LA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Alexandria">
+              <a href="shop.html?city=Alexandria"><span class="city">Alexandria</span>, USA</a>
+              
+                <span class="state">VA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Allegan">
+              <a href="shop.html?city=Allegan"><span class="city">Allegan</span>, USA</a>
+              
+                <span class="state">MI</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Allen">
+              <a href="shop.html?city=Allen"><span class="city">Allen</span>, USA</a>
+              
+                <span class="state">TX</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Allentown">
+              <a href="shop.html?city=Allentown"><span class="city">Allentown</span>, USA</a>
+              
+                <span class="state">PA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Allison">
+              <a href="shop.html?city=Allison"><span class="city">Allison</span>, USA</a>
+              
+                <span class="state">IA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Allston">
+              <a href="shop.html?city=Allston"><span class="city">Allston</span>, USA</a>
+              
+                <span class="state">MA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Alpharetta">
+              <a href="shop.html?city=Alpharetta"><span class="city">Alpharetta</span>, USA</a>
+              
+                <span class="state">GA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Alpine">
+              <a href="shop.html?city=Alpine"><span class="city">Alpine</span>, USA</a>
+              
+                <span class="state">CA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Alsdorf">
+              <a href="shop.html?city=Alsdorf"><span class="city">Alsdorf</span>, Germany</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Alton">
+              <a href="shop.html?city=Alton"><span class="city">Alton</span>, USA</a>
+              
+                <span class="state">VA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Amagansett">
+              <a href="shop.html?city=Amagansett"><span class="city">Amagansett</span>, USA</a>
+              
+                <span class="state">NY</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Amarillo">
+              <a href="shop.html?city=Amarillo"><span class="city">Amarillo</span>, USA</a>
+              
+                <span class="state">TX</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Ames">
+              <a href="shop.html?city=Ames"><span class="city">Ames</span>, USA</a>
+              
+                <span class="state">IA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Amherst">
+              <a href="shop.html?city=Amherst"><span class="city">Amherst</span>, USA</a>
+              
+                <span class="state">MA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Amityville">
+              <a href="shop.html?city=Amityville"><span class="city">Amityville</span>, USA</a>
+              
+                <span class="state">NY</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Amsterdam">
+              <a href="shop.html?city=Amsterdam"><span class="city">Amsterdam</span>, Netherlands</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Anaheim">
+              <a href="shop.html?city=Anaheim"><span class="city">Anaheim</span>, USA</a>
+              
+                <span class="state">CA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Anchorage">
+              <a href="shop.html?city=Anchorage"><span class="city">Anchorage</span>, USA</a>
+              
+                <span class="state">AK</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Anderson">
+              <a href="shop.html?city=Anderson"><span class="city">Anderson</span>, USA</a>
+              
+                <span class="state">IN</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Ann Arbor">
+              <a href="shop.html?city=Ann Arbor"><span class="city">Ann Arbor</span>, USA</a>
+              
+                <span class="state">MI</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Annaberg-Buchholz">
+              <a href="shop.html?city=Annaberg-Buchholz"><span class="city">Annaberg-Buchholz</span>, Germany</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Annapolis">
+              <a href="shop.html?city=Annapolis"><span class="city">Annapolis</span>, USA</a>
+              
+                <span class="state">MD</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Appleton">
+              <a href="shop.html?city=Appleton"><span class="city">Appleton</span>, USA</a>
+              
+                <span class="state">WI</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Ardmore">
+              <a href="shop.html?city=Ardmore"><span class="city">Ardmore</span>, USA</a>
+              
+                <span class="state">PA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Arlington">
+              <a href="shop.html?city=Arlington"><span class="city">Arlington</span>, USA</a>
+              
+                <span class="state">TX</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Arlington Heights">
+              <a href="shop.html?city=Arlington Heights"><span class="city">Arlington Heights</span>, USA</a>
+              
+                <span class="state">IL</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Arnhem">
+              <a href="shop.html?city=Arnhem"><span class="city">Arnhem</span>, Netherlands</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Arrington">
+              <a href="shop.html?city=Arrington"><span class="city">Arrington</span>, USA</a>
+              
+                <span class="state">VA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Arroyo Grande">
+              <a href="shop.html?city=Arroyo Grande"><span class="city">Arroyo Grande</span>, USA</a>
+              
+                <span class="state">CA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Artemas">
+              <a href="shop.html?city=Artemas"><span class="city">Artemas</span>, USA</a>
+              
+                <span class="state">PA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Arvada">
+              <a href="shop.html?city=Arvada"><span class="city">Arvada</span>, USA</a>
+              
+                <span class="state">CO</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Asbury Park">
+              <a href="shop.html?city=Asbury Park"><span class="city">Asbury Park</span>, USA</a>
+              
+                <span class="state">NJ</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Aschaffenburg">
+              <a href="shop.html?city=Aschaffenburg"><span class="city">Aschaffenburg</span>, Germany</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Asheville">
+              <a href="shop.html?city=Asheville"><span class="city">Asheville</span>, USA</a>
+              
+                <span class="state">NC</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Ashland">
+              <a href="shop.html?city=Ashland"><span class="city">Ashland</span>, USA</a>
+              
+                <span class="state">KY</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Aspen">
+              <a href="shop.html?city=Aspen"><span class="city">Aspen</span>, USA</a>
+              
+                <span class="state">CO</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Assago">
+              <a href="shop.html?city=Assago"><span class="city">Assago</span>, Italy</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Athens">
+              <a href="shop.html?city=Athens"><span class="city">Athens</span>, USA</a>
+              
+                <span class="state">GA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Athens">
+              <a href="shop.html?city=Athens"><span class="city">Athens</span>, USA</a>
+              
+                <span class="state">MT</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Athens">
+              <a href="shop.html?city=Athens"><span class="city">Athens</span>, USA</a>
+              
+                <span class="state">OH</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Atlanta">
+              <a href="shop.html?city=Atlanta"><span class="city">Atlanta</span>, USA</a>
+              
+                <span class="state">GA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Atlantic City">
+              <a href="shop.html?city=Atlantic City"><span class="city">Atlantic City</span>, USA</a>
+              
+                <span class="state">NJ</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Atmore">
+              <a href="shop.html?city=Atmore"><span class="city">Atmore</span>, USA</a>
+              
+                <span class="state">AL</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Auburn">
+              <a href="shop.html?city=Auburn"><span class="city">Auburn</span>, USA</a>
+              
+                <span class="state">WA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Auburn">
+              <a href="shop.html?city=Auburn"><span class="city">Auburn</span>, USA</a>
+              
+                <span class="state">AL</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Auburn Hills">
+              <a href="shop.html?city=Auburn Hills"><span class="city">Auburn Hills</span>, USA</a>
+              
+                <span class="state">MI</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Auckland">
+              <a href="shop.html?city=Auckland"><span class="city">Auckland</span>, New Zealand</a>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Augusta">
+              <a href="shop.html?city=Augusta"><span class="city">Augusta</span>, USA</a>
+              
+                <span class="state">GA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Augusta">
+              <a href="shop.html?city=Augusta"><span class="city">Augusta</span>, USA</a>
+              
+                <span class="state">ME</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Aurora">
+              <a href="shop.html?city=Aurora"><span class="city">Aurora</span>, USA</a>
+              
+                <span class="state">IL</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Austin">
+              <a href="shop.html?city=Austin"><span class="city">Austin</span>, USA</a>
+              
+                <span class="state">WI</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Austin">
+              <a href="shop.html?city=Austin"><span class="city">Austin</span>, USA</a>
+              
+                <span class="state">TX</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Avila Beach">
+              <a href="shop.html?city=Avila Beach"><span class="city">Avila Beach</span>, USA</a>
+              
+                <span class="state">CA</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Avon">
+              <a href="shop.html?city=Avon"><span class="city">Avon</span>, USA</a>
+              
+                <span class="state">CO</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="Avondale">
+              <a href="shop.html?city=Avondale"><span class="city">Avondale</span>, USA</a>
+              
+                <span class="state">AZ</span>
+              
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+        <div class="delivery--block">
+          <div class="delivery--letter">B</div>
+          <ul  class="delivery--list">
+            
+            <li class="delivery__item" data-sort="	Bad Homburg vor der Höhe	">
+              <a href="shop.html?city=	Bad Homburg vor der Höhe	"><span class="city">	Bad Homburg vor der Höhe	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Baden-Baden	">
+              <a href="shop.html?city=	Baden-Baden	"><span class="city">	Baden-Baden	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bakersfield	">
+              <a href="shop.html?city=	Bakersfield	"><span class="city">	Bakersfield	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Baldwin City	">
+              <a href="shop.html?city=	Baldwin City	"><span class="city">	Baldwin City	</span>, 	USA	</a>
+              
+                <span class="state">	KS  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Baldwinsville	">
+              <a href="shop.html?city=	Baldwinsville	"><span class="city">	Baldwinsville	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Baltimore	">
+              <a href="shop.html?city=	Baltimore	"><span class="city">	Baltimore	</span>, 	USA	</a>
+              
+                <span class="state">	MD  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bamberg	">
+              <a href="shop.html?city=	Bamberg	"><span class="city">	Bamberg	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bangor	">
+              <a href="shop.html?city=	Bangor	"><span class="city">	Bangor	</span>, 	USA	</a>
+              
+                <span class="state">	ME  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Baraboo	">
+              <a href="shop.html?city=	Baraboo	"><span class="city">	Baraboo	</span>, 	USA	</a>
+              
+                <span class="state">	WI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Barcelona	">
+              <a href="shop.html?city=	Barcelona	"><span class="city">	Barcelona	</span>, 	Spain	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Barolo	">
+              <a href="shop.html?city=	Barolo	"><span class="city">	Barolo	</span>, 	Italy	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Barrie	">
+              <a href="shop.html?city=	Barrie	"><span class="city">	Barrie	</span>, 	Canada	</a>
+              
+                <span class="state">	ON  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Batavia	">
+              <a href="shop.html?city=	Batavia	"><span class="city">	Batavia	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Baton Rouge	">
+              <a href="shop.html?city=	Baton Rouge	"><span class="city">	Baton Rouge	</span>, 	USA	</a>
+              
+                <span class="state">	LA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Battle Creek	">
+              <a href="shop.html?city=	Battle Creek	"><span class="city">	Battle Creek	</span>, 	USA	</a>
+              
+                <span class="state">	MI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bay City	">
+              <a href="shop.html?city=	Bay City	"><span class="city">	Bay City	</span>, 	USA	</a>
+              
+                <span class="state">	MI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bay Roberts	">
+              <a href="shop.html?city=	Bay Roberts	"><span class="city">	Bay Roberts	</span>, 	Canada	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bay Shore	">
+              <a href="shop.html?city=	Bay Shore	"><span class="city">	Bay Shore	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bayreuth	">
+              <a href="shop.html?city=	Bayreuth	"><span class="city">	Bayreuth	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Beaumont	">
+              <a href="shop.html?city=	Beaumont	"><span class="city">	Beaumont	</span>, 	USA	</a>
+              
+                <span class="state">	TX  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Belfast	">
+              <a href="shop.html?city=	Belfast	"><span class="city">	Belfast	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bellingham	">
+              <a href="shop.html?city=	Bellingham	"><span class="city">	Bellingham	</span>, 	USA	</a>
+              
+                <span class="state">	WA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bellvue	">
+              <a href="shop.html?city=	Bellvue	"><span class="city">	Bellvue	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Belmont	">
+              <a href="shop.html?city=	Belmont	"><span class="city">	Belmont	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Belo Horizonte	">
+              <a href="shop.html?city=	Belo Horizonte	"><span class="city">	Belo Horizonte	</span>, 	Brazil	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bemidji	">
+              <a href="shop.html?city=	Bemidji	"><span class="city">	Bemidji	</span>, 	USA	</a>
+              
+                <span class="state">	MN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bend	">
+              <a href="shop.html?city=	Bend	"><span class="city">	Bend	</span>, 	USA	</a>
+              
+                <span class="state">	OR  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Benton	">
+              <a href="shop.html?city=	Benton	"><span class="city">	Benton	</span>, 	USA	</a>
+              
+                <span class="state">	KY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Benton Harbor	">
+              <a href="shop.html?city=	Benton Harbor	"><span class="city">	Benton Harbor	</span>, 	USA	</a>
+              
+                <span class="state">	MI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bergheim	">
+              <a href="shop.html?city=	Bergheim	"><span class="city">	Bergheim	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Berkeley	">
+              <a href="shop.html?city=	Berkeley	"><span class="city">	Berkeley	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Berlin	">
+              <a href="shop.html?city=	Berlin	"><span class="city">	Berlin	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bern	">
+              <a href="shop.html?city=	Bern	"><span class="city">	Bern	</span>, 	Switzerland	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Berryville	">
+              <a href="shop.html?city=	Berryville	"><span class="city">	Berryville	</span>, 	USA	</a>
+              
+                <span class="state">	VA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Berwyn	">
+              <a href="shop.html?city=	Berwyn	"><span class="city">	Berwyn	</span>, 	USA	</a>
+              
+                <span class="state">	IL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bethel	">
+              <a href="shop.html?city=	Bethel	"><span class="city">	Bethel	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bethesda	">
+              <a href="shop.html?city=	Bethesda	"><span class="city">	Bethesda	</span>, 	USA	</a>
+              
+                <span class="state">	MD  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bethlehem	">
+              <a href="shop.html?city=	Bethlehem	"><span class="city">	Bethlehem	</span>, 	USA	</a>
+              
+                <span class="state">	PA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Beverly	">
+              <a href="shop.html?city=	Beverly	"><span class="city">	Beverly	</span>, 	USA	</a>
+              
+                <span class="state">	MA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Beverly Hills	">
+              <a href="shop.html?city=	Beverly Hills	"><span class="city">	Beverly Hills	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Beverungen	">
+              <a href="shop.html?city=	Beverungen	"><span class="city">	Beverungen	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bielefeld	">
+              <a href="shop.html?city=	Bielefeld	"><span class="city">	Bielefeld	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Big Flats	">
+              <a href="shop.html?city=	Big Flats	"><span class="city">	Big Flats	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Billings	">
+              <a href="shop.html?city=	Billings	"><span class="city">	Billings	</span>, 	USA	</a>
+              
+                <span class="state">	MT  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Biloxi	">
+              <a href="shop.html?city=	Biloxi	"><span class="city">	Biloxi	</span>, 	USA	</a>
+              
+                <span class="state">	MS  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Binghamton	">
+              <a href="shop.html?city=	Binghamton	"><span class="city">	Binghamton	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Birmingham	">
+              <a href="shop.html?city=	Birmingham	"><span class="city">	Birmingham	</span>, 	USA	</a>
+              
+                <span class="state">	AL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Birmingham	">
+              <a href="shop.html?city=	Birmingham	"><span class="city">	Birmingham	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bismarck	">
+              <a href="shop.html?city=	Bismarck	"><span class="city">	Bismarck	</span>, 	USA	</a>
+              
+                <span class="state">	ND  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Black Mountain	">
+              <a href="shop.html?city=	Black Mountain	"><span class="city">	Black Mountain	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Blacksburg	">
+              <a href="shop.html?city=	Blacksburg	"><span class="city">	Blacksburg	</span>, 	USA	</a>
+              
+                <span class="state">	VA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bloomington	">
+              <a href="shop.html?city=	Bloomington	"><span class="city">	Bloomington	</span>, 	USA	</a>
+              
+                <span class="state">	IL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bloomington	">
+              <a href="shop.html?city=	Bloomington	"><span class="city">	Bloomington	</span>, 	USA	</a>
+              
+                <span class="state">	MN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bloomington	">
+              <a href="shop.html?city=	Bloomington	"><span class="city">	Bloomington	</span>, 	USA	</a>
+              
+                <span class="state">	IN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Boca Raton	">
+              <a href="shop.html?city=	Boca Raton	"><span class="city">	Boca Raton	</span>, 	USA	</a>
+              
+                <span class="state">	FL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bogotá	">
+              <a href="shop.html?city=	Bogotá	"><span class="city">	Bogotá	</span>, 	Colombia	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Böhlen	">
+              <a href="shop.html?city=	Böhlen	"><span class="city">	Böhlen	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Boise	">
+              <a href="shop.html?city=	Boise	"><span class="city">	Boise	</span>, 	USA	</a>
+              
+                <span class="state">	ID  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bologna	">
+              <a href="shop.html?city=	Bologna	"><span class="city">	Bologna	</span>, 	Italy	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bonita Springs	">
+              <a href="shop.html?city=	Bonita Springs	"><span class="city">	Bonita Springs	</span>, 	USA	</a>
+              
+                <span class="state">	FL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bonn	">
+              <a href="shop.html?city=	Bonn	"><span class="city">	Bonn	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bonner Springs	">
+              <a href="shop.html?city=	Bonner Springs	"><span class="city">	Bonner Springs	</span>, 	USA	</a>
+              
+                <span class="state">	KS  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Boom	">
+              <a href="shop.html?city=	Boom	"><span class="city">	Boom	</span>, 	Belgium	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Boone	">
+              <a href="shop.html?city=	Boone	"><span class="city">	Boone	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Boone	">
+              <a href="shop.html?city=	Boone	"><span class="city">	Boone	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bordeaux	">
+              <a href="shop.html?city=	Bordeaux	"><span class="city">	Bordeaux	</span>, 	France	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Borgata Ottavia	">
+              <a href="shop.html?city=	Borgata Ottavia	"><span class="city">	Borgata Ottavia	</span>, 	Italy	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Borken	">
+              <a href="shop.html?city=	Borken	"><span class="city">	Borken	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bossier City	">
+              <a href="shop.html?city=	Bossier City	"><span class="city">	Bossier City	</span>, 	USA	</a>
+              
+                <span class="state">	LA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Boston	">
+              <a href="shop.html?city=	Boston	"><span class="city">	Boston	</span>, 	USA	</a>
+              
+                <span class="state">	MA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Boulder	">
+              <a href="shop.html?city=	Boulder	"><span class="city">	Boulder	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bournemouth	">
+              <a href="shop.html?city=	Bournemouth	"><span class="city">	Bournemouth	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bow	">
+              <a href="shop.html?city=	Bow	"><span class="city">	Bow	</span>, 	USA	</a>
+              
+                <span class="state">	WA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bowie	">
+              <a href="shop.html?city=	Bowie	"><span class="city">	Bowie	</span>, 	USA	</a>
+              
+                <span class="state">	MD  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bowler	">
+              <a href="shop.html?city=	Bowler	"><span class="city">	Bowler	</span>, 	USA	</a>
+              
+                <span class="state">	WI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bowling Green	">
+              <a href="shop.html?city=	Bowling Green	"><span class="city">	Bowling Green	</span>, 	USA	</a>
+              
+                <span class="state">	KY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bowling Green	">
+              <a href="shop.html?city=	Bowling Green	"><span class="city">	Bowling Green	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bowmanville	">
+              <a href="shop.html?city=	Bowmanville	"><span class="city">	Bowmanville	</span>, 	Canada	</a>
+              
+                <span class="state">	ON  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bozeman	">
+              <a href="shop.html?city=	Bozeman	"><span class="city">	Bozeman	</span>, 	USA	</a>
+              
+                <span class="state">	MT  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brampton	">
+              <a href="shop.html?city=	Brampton	"><span class="city">	Brampton	</span>, 	Canada	</a>
+              
+                <span class="state">	ON  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Branchburg	">
+              <a href="shop.html?city=	Branchburg	"><span class="city">	Branchburg	</span>, 	USA	</a>
+              
+                <span class="state">	NJ  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brandenburg an der Havel	">
+              <a href="shop.html?city=	Brandenburg an der Havel	"><span class="city">	Brandenburg an der Havel	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brandon	">
+              <a href="shop.html?city=	Brandon	"><span class="city">	Brandon	</span>, 	USA	</a>
+              
+                <span class="state">	MS  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brandon	">
+              <a href="shop.html?city=	Brandon	"><span class="city">	Brandon	</span>, 	Canada	</a>
+              
+                <span class="state">	MB  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Branson	">
+              <a href="shop.html?city=	Branson	"><span class="city">	Branson	</span>, 	USA	</a>
+              
+                <span class="state">	MO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bratislava	">
+              <a href="shop.html?city=	Bratislava	"><span class="city">	Bratislava	</span>, 	Slovakia	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Braunschweig	">
+              <a href="shop.html?city=	Braunschweig	"><span class="city">	Braunschweig	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brea	">
+              <a href="shop.html?city=	Brea	"><span class="city">	Brea	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bremen	">
+              <a href="shop.html?city=	Bremen	"><span class="city">	Bremen	</span>, 	USA	</a>
+              
+                <span class="state">	GA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bremen	">
+              <a href="shop.html?city=	Bremen	"><span class="city">	Bremen	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bremerhaven	">
+              <a href="shop.html?city=	Bremerhaven	"><span class="city">	Bremerhaven	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brevard	">
+              <a href="shop.html?city=	Brevard	"><span class="city">	Brevard	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bridgeport	">
+              <a href="shop.html?city=	Bridgeport	"><span class="city">	Bridgeport	</span>, 	USA	</a>
+              
+                <span class="state">	CT  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bridgeview	">
+              <a href="shop.html?city=	Bridgeview	"><span class="city">	Bridgeview	</span>, 	USA	</a>
+              
+                <span class="state">	IL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brighton	">
+              <a href="shop.html?city=	Brighton	"><span class="city">	Brighton	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brighton	">
+              <a href="shop.html?city=	Brighton	"><span class="city">	Brighton	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bristol	">
+              <a href="shop.html?city=	Bristol	"><span class="city">	Bristol	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bristol	">
+              <a href="shop.html?city=	Bristol	"><span class="city">	Bristol	</span>, 	USA	</a>
+              
+                <span class="state">	TN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bristow	">
+              <a href="shop.html?city=	Bristow	"><span class="city">	Bristow	</span>, 	USA	</a>
+              
+                <span class="state">	VA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brockton	">
+              <a href="shop.html?city=	Brockton	"><span class="city">	Brockton	</span>, 	USA	</a>
+              
+                <span class="state">	MA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bronx	">
+              <a href="shop.html?city=	Bronx	"><span class="city">	Bronx	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brookings	">
+              <a href="shop.html?city=	Brookings	"><span class="city">	Brookings	</span>, 	USA	</a>
+              
+                <span class="state">	SD  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brooklyn	">
+              <a href="shop.html?city=	Brooklyn	"><span class="city">	Brooklyn	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brooklyn	">
+              <a href="shop.html?city=	Brooklyn	"><span class="city">	Brooklyn	</span>, 	USA	</a>
+              
+                <span class="state">	MI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brooks	">
+              <a href="shop.html?city=	Brooks	"><span class="city">	Brooks	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Broomfield	">
+              <a href="shop.html?city=	Broomfield	"><span class="city">	Broomfield	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brownfield	">
+              <a href="shop.html?city=	Brownfield	"><span class="city">	Brownfield	</span>, 	USA	</a>
+              
+                <span class="state">	ME  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brownsville	">
+              <a href="shop.html?city=	Brownsville	"><span class="city">	Brownsville	</span>, 	USA	</a>
+              
+                <span class="state">	OR  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Bruce	">
+              <a href="shop.html?city=	Bruce	"><span class="city">	Bruce	</span>, 	Australia	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Brussels	">
+              <a href="shop.html?city=	Brussels	"><span class="city">	Brussels	</span>, 	Belgium	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Budapest	">
+              <a href="shop.html?city=	Budapest	"><span class="city">	Budapest	</span>, 	Hungary	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Buffalo	">
+              <a href="shop.html?city=	Buffalo	"><span class="city">	Buffalo	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burbank	">
+              <a href="shop.html?city=	Burbank	"><span class="city">	Burbank	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burgettstown	">
+              <a href="shop.html?city=	Burgettstown	"><span class="city">	Burgettstown	</span>, 	USA	</a>
+              
+                <span class="state">	PA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burlington	">
+              <a href="shop.html?city=	Burlington	"><span class="city">	Burlington	</span>, 	USA	</a>
+              
+                <span class="state">	VT  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burlington	">
+              <a href="shop.html?city=	Burlington	"><span class="city">	Burlington	</span>, 	Canada	</a>
+              
+                <span class="state">	ON  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burnaby	">
+              <a href="shop.html?city=	Burnaby	"><span class="city">	Burnaby	</span>, 	Canada	</a>
+              
+                <span class="state">	BC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burnet	">
+              <a href="shop.html?city=	Burnet	"><span class="city">	Burnet	</span>, 	USA	</a>
+              
+                <span class="state">	TX  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burnsville	">
+              <a href="shop.html?city=	Burnsville	"><span class="city">	Burnsville	</span>, 	USA	</a>
+              
+                <span class="state">	MN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Burswood	">
+              <a href="shop.html?city=	Burswood	"><span class="city">	Burswood	</span>, 	Australia	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+        <div class="delivery--block">
+          <div class="delivery--letter">C</div>
+          <ul  class="delivery--list">
+            
+            <li class="delivery__item" data-sort="	Cabazon	">
+              <a href="shop.html?city=	Cabazon	"><span class="city">	Cabazon	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cadott	">
+              <a href="shop.html?city=	Cadott	"><span class="city">	Cadott	</span>, 	USA	</a>
+              
+                <span class="state">	WI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Calgary	">
+              <a href="shop.html?city=	Calgary	"><span class="city">	Calgary	</span>, 	Canada	</a>
+              
+                <span class="state">	AB  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cambridge	">
+              <a href="shop.html?city=	Cambridge	"><span class="city">	Cambridge	</span>, 	USA	</a>
+              
+                <span class="state">	MA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cambridge	">
+              <a href="shop.html?city=	Cambridge	"><span class="city">	Cambridge	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Camden	">
+              <a href="shop.html?city=	Camden	"><span class="city">	Camden	</span>, 	USA	</a>
+              
+                <span class="state">	NJ  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Camdenton	">
+              <a href="shop.html?city=	Camdenton	"><span class="city">	Camdenton	</span>, 	USA	</a>
+              
+                <span class="state">	MO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Camrose	">
+              <a href="shop.html?city=	Camrose	"><span class="city">	Camrose	</span>, 	Canada	</a>
+              
+                <span class="state">	AB  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Canandaigua	">
+              <a href="shop.html?city=	Canandaigua	"><span class="city">	Canandaigua	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Canfield	">
+              <a href="shop.html?city=	Canfield	"><span class="city">	Canfield	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Canton	">
+              <a href="shop.html?city=	Canton	"><span class="city">	Canton	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Canyonville	">
+              <a href="shop.html?city=	Canyonville	"><span class="city">	Canyonville	</span>, 	USA	</a>
+              
+                <span class="state">	OR  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Capannelle	">
+              <a href="shop.html?city=	Capannelle	"><span class="city">	Capannelle	</span>, 	Italy	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cape Girardeau	">
+              <a href="shop.html?city=	Cape Girardeau	"><span class="city">	Cape Girardeau	</span>, 	USA	</a>
+              
+                <span class="state">	MO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Carbondale	">
+              <a href="shop.html?city=	Carbondale	"><span class="city">	Carbondale	</span>, 	USA	</a>
+              
+                <span class="state">	IL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cardiff	">
+              <a href="shop.html?city=	Cardiff	"><span class="city">	Cardiff	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Carlton	">
+              <a href="shop.html?city=	Carlton	"><span class="city">	Carlton	</span>, 	USA	</a>
+              
+                <span class="state">	MN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Carmel	">
+              <a href="shop.html?city=	Carmel	"><span class="city">	Carmel	</span>, 	USA	</a>
+              
+                <span class="state">	FL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Carmel	">
+              <a href="shop.html?city=	Carmel	"><span class="city">	Carmel	</span>, 	USA	</a>
+              
+                <span class="state">	IN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Carmel By The Sea	">
+              <a href="shop.html?city=	Carmel By The Sea	"><span class="city">	Carmel By The Sea	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Carrboro	">
+              <a href="shop.html?city=	Carrboro	"><span class="city">	Carrboro	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Carson	">
+              <a href="shop.html?city=	Carson	"><span class="city">	Carson	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cary	">
+              <a href="shop.html?city=	Cary	"><span class="city">	Cary	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Casper	">
+              <a href="shop.html?city=	Casper	"><span class="city">	Casper	</span>, 	USA	</a>
+              
+                <span class="state">	WY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Castle Rock	">
+              <a href="shop.html?city=	Castle Rock	"><span class="city">	Castle Rock	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Catoosa	">
+              <a href="shop.html?city=	Catoosa	"><span class="city">	Catoosa	</span>, 	USA	</a>
+              
+                <span class="state">	OK  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cedar Falls	">
+              <a href="shop.html?city=	Cedar Falls	"><span class="city">	Cedar Falls	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cedar Park	">
+              <a href="shop.html?city=	Cedar Park	"><span class="city">	Cedar Park	</span>, 	USA	</a>
+              
+                <span class="state">	TX  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cedar Rapids	">
+              <a href="shop.html?city=	Cedar Rapids	"><span class="city">	Cedar Rapids	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Centennial	">
+              <a href="shop.html?city=	Centennial	"><span class="city">	Centennial	</span>, 	USA	</a>
+              
+                <span class="state">	NE  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Central City	">
+              <a href="shop.html?city=	Central City	"><span class="city">	Central City	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Central Point	">
+              <a href="shop.html?city=	Central Point	"><span class="city">	Central Point	</span>, 	USA	</a>
+              
+                <span class="state">	OR  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Centralia	">
+              <a href="shop.html?city=	Centralia	"><span class="city">	Centralia	</span>, 	USA	</a>
+              
+                <span class="state">	MO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cerritos	">
+              <a href="shop.html?city=	Cerritos	"><span class="city">	Cerritos	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Champaign	">
+              <a href="shop.html?city=	Champaign	"><span class="city">	Champaign	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Champaign	">
+              <a href="shop.html?city=	Champaign	"><span class="city">	Champaign	</span>, 	USA	</a>
+              
+                <span class="state">	IL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chandler	">
+              <a href="shop.html?city=	Chandler	"><span class="city">	Chandler	</span>, 	USA	</a>
+              
+                <span class="state">	AZ  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chapel Hill	">
+              <a href="shop.html?city=	Chapel Hill	"><span class="city">	Chapel Hill	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chardon	">
+              <a href="shop.html?city=	Chardon	"><span class="city">	Chardon	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Charenton	">
+              <a href="shop.html?city=	Charenton	"><span class="city">	Charenton	</span>, 	USA	</a>
+              
+                <span class="state">	LA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Charles Town	">
+              <a href="shop.html?city=	Charles Town	"><span class="city">	Charles Town	</span>, 	USA	</a>
+              
+                <span class="state">	WV  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Charleston	">
+              <a href="shop.html?city=	Charleston	"><span class="city">	Charleston	</span>, 	USA	</a>
+              
+                <span class="state">	WV  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Charleston	">
+              <a href="shop.html?city=	Charleston	"><span class="city">	Charleston	</span>, 	USA	</a>
+              
+                <span class="state">	SC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Charlotte	">
+              <a href="shop.html?city=	Charlotte	"><span class="city">	Charlotte	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Charlottesville	">
+              <a href="shop.html?city=	Charlottesville	"><span class="city">	Charlottesville	</span>, 	USA	</a>
+              
+                <span class="state">	VA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Charlottetown	">
+              <a href="shop.html?city=	Charlottetown	"><span class="city">	Charlottetown	</span>, 	Canada	</a>
+              
+                <span class="state">	PE  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chattanooga	">
+              <a href="shop.html?city=	Chattanooga	"><span class="city">	Chattanooga	</span>, 	USA	</a>
+              
+                <span class="state">	TN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chautauqua	">
+              <a href="shop.html?city=	Chautauqua	"><span class="city">	Chautauqua	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chelmsford	">
+              <a href="shop.html?city=	Chelmsford	"><span class="city">	Chelmsford	</span>, 	United Kingdom	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chemnitz	">
+              <a href="shop.html?city=	Chemnitz	"><span class="city">	Chemnitz	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cheney	">
+              <a href="shop.html?city=	Cheney	"><span class="city">	Cheney	</span>, 	USA	</a>
+              
+                <span class="state">	WA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cherokee	">
+              <a href="shop.html?city=	Cherokee	"><span class="city">	Cherokee	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chesapeake	">
+              <a href="shop.html?city=	Chesapeake	"><span class="city">	Chesapeake	</span>, 	USA	</a>
+              
+                <span class="state">	VA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chester	">
+              <a href="shop.html?city=	Chester	"><span class="city">	Chester	</span>, 	USA	</a>
+              
+                <span class="state">	PA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chesterfield	">
+              <a href="shop.html?city=	Chesterfield	"><span class="city">	Chesterfield	</span>, 	USA	</a>
+              
+                <span class="state">	MO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chestnut Hill	">
+              <a href="shop.html?city=	Chestnut Hill	"><span class="city">	Chestnut Hill	</span>, 	USA	</a>
+              
+                <span class="state">	MA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cheyenne	">
+              <a href="shop.html?city=	Cheyenne	"><span class="city">	Cheyenne	</span>, 	USA	</a>
+              
+                <span class="state">	WY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chianchitta	">
+              <a href="shop.html?city=	Chianchitta	"><span class="city">	Chianchitta	</span>, 	Italy	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chicago	">
+              <a href="shop.html?city=	Chicago	"><span class="city">	Chicago	</span>, 	USA	</a>
+              
+                <span class="state">	IL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chico	">
+              <a href="shop.html?city=	Chico	"><span class="city">	Chico	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chicopee	">
+              <a href="shop.html?city=	Chicopee	"><span class="city">	Chicopee	</span>, 	USA	</a>
+              
+                <span class="state">	MA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chillicothe	">
+              <a href="shop.html?city=	Chillicothe	"><span class="city">	Chillicothe	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Christchurch	">
+              <a href="shop.html?city=	Christchurch	"><span class="city">	Christchurch	</span>, 	New Zealand	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Chula Vista	">
+              <a href="shop.html?city=	Chula Vista	"><span class="city">	Chula Vista	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cincinnati	">
+              <a href="shop.html?city=	Cincinnati	"><span class="city">	Cincinnati	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clarkston	">
+              <a href="shop.html?city=	Clarkston	"><span class="city">	Clarkston	</span>, 	USA	</a>
+              
+                <span class="state">	MI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clayton	">
+              <a href="shop.html?city=	Clayton	"><span class="city">	Clayton	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clear Lake	">
+              <a href="shop.html?city=	Clear Lake	"><span class="city">	Clear Lake	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clearwater	">
+              <a href="shop.html?city=	Clearwater	"><span class="city">	Clearwater	</span>, 	USA	</a>
+              
+                <span class="state">	FL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clemson	">
+              <a href="shop.html?city=	Clemson	"><span class="city">	Clemson	</span>, 	USA	</a>
+              
+                <span class="state">	SC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cleveland	">
+              <a href="shop.html?city=	Cleveland	"><span class="city">	Cleveland	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clifton	">
+              <a href="shop.html?city=	Clifton	"><span class="city">	Clifton	</span>, 	USA	</a>
+              
+                <span class="state">	NJ  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clifton Park	">
+              <a href="shop.html?city=	Clifton Park	"><span class="city">	Clifton Park	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clinton	">
+              <a href="shop.html?city=	Clinton	"><span class="city">	Clinton	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clinton Township	">
+              <a href="shop.html?city=	Clinton Township	"><span class="city">	Clinton Township	</span>, 	USA	</a>
+              
+                <span class="state">	MI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clive	">
+              <a href="shop.html?city=	Clive	"><span class="city">	Clive	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Clyde	">
+              <a href="shop.html?city=	Clyde	"><span class="city">	Clyde	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Coachella	">
+              <a href="shop.html?city=	Coachella	"><span class="city">	Coachella	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Coarsegold	">
+              <a href="shop.html?city=	Coarsegold	"><span class="city">	Coarsegold	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cocoa	">
+              <a href="shop.html?city=	Cocoa	"><span class="city">	Cocoa	</span>, 	USA	</a>
+              
+                <span class="state">	FL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cohasset	">
+              <a href="shop.html?city=	Cohasset	"><span class="city">	Cohasset	</span>, 	USA	</a>
+              
+                <span class="state">	MA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cohoes	">
+              <a href="shop.html?city=	Cohoes	"><span class="city">	Cohoes	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cold Lake	">
+              <a href="shop.html?city=	Cold Lake	"><span class="city">	Cold Lake	</span>, 	Canada	</a>
+              
+                <span class="state">	AB  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	College Park	">
+              <a href="shop.html?city=	College Park	"><span class="city">	College Park	</span>, 	USA	</a>
+              
+                <span class="state">	MD  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	College Station	">
+              <a href="shop.html?city=	College Station	"><span class="city">	College Station	</span>, 	USA	</a>
+              
+                <span class="state">	TX  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Colorado Springs	">
+              <a href="shop.html?city=	Colorado Springs	"><span class="city">	Colorado Springs	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Colquitt	">
+              <a href="shop.html?city=	Colquitt	"><span class="city">	Colquitt	</span>, 	USA	</a>
+              
+                <span class="state">	GA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Columbia	">
+              <a href="shop.html?city=	Columbia	"><span class="city">	Columbia	</span>, 	USA	</a>
+              
+                <span class="state">	SC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Columbia	">
+              <a href="shop.html?city=	Columbia	"><span class="city">	Columbia	</span>, 	USA	</a>
+              
+                <span class="state">	MO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Columbia	">
+              <a href="shop.html?city=	Columbia	"><span class="city">	Columbia	</span>, 	USA	</a>
+              
+                <span class="state">	MD  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Columbus	">
+              <a href="shop.html?city=	Columbus	"><span class="city">	Columbus	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Columbus	">
+              <a href="shop.html?city=	Columbus	"><span class="city">	Columbus	</span>, 	USA	</a>
+              
+                <span class="state">	GA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Commerce City	">
+              <a href="shop.html?city=	Commerce City	"><span class="city">	Commerce City	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Comstock Park	">
+              <a href="shop.html?city=	Comstock Park	"><span class="city">	Comstock Park	</span>, 	USA	</a>
+              
+                <span class="state">	MI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Concord	">
+              <a href="shop.html?city=	Concord	"><span class="city">	Concord	</span>, 	USA	</a>
+              
+                <span class="state">	NH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Concord	">
+              <a href="shop.html?city=	Concord	"><span class="city">	Concord	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Concord	">
+              <a href="shop.html?city=	Concord	"><span class="city">	Concord	</span>, 	USA	</a>
+              
+                <span class="state">	NC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Connersville	">
+              <a href="shop.html?city=	Connersville	"><span class="city">	Connersville	</span>, 	USA	</a>
+              
+                <span class="state">	IN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Conway	">
+              <a href="shop.html?city=	Conway	"><span class="city">	Conway	</span>, 	USA	</a>
+              
+                <span class="state">	SC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cooperstown	">
+              <a href="shop.html?city=	Cooperstown	"><span class="city">	Cooperstown	</span>, 	USA	</a>
+              
+                <span class="state">	NY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Copenhagen	">
+              <a href="shop.html?city=	Copenhagen	"><span class="city">	Copenhagen	</span>, 	Denmark	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Coquitlam	">
+              <a href="shop.html?city=	Coquitlam	"><span class="city">	Coquitlam	</span>, 	Canada	</a>
+              
+                <span class="state">	BC  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Coralville	">
+              <a href="shop.html?city=	Coralville	"><span class="city">	Coralville	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Corbin	">
+              <a href="shop.html?city=	Corbin	"><span class="city">	Corbin	</span>, 	USA	</a>
+              
+                <span class="state">	KY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cordele	">
+              <a href="shop.html?city=	Cordele	"><span class="city">	Cordele	</span>, 	USA	</a>
+              
+                <span class="state">	GA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Corpus Christi	">
+              <a href="shop.html?city=	Corpus Christi	"><span class="city">	Corpus Christi	</span>, 	USA	</a>
+              
+                <span class="state">	TX  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Corsicana	">
+              <a href="shop.html?city=	Corsicana	"><span class="city">	Corsicana	</span>, 	USA	</a>
+              
+                <span class="state">	TX  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cortez	">
+              <a href="shop.html?city=	Cortez	"><span class="city">	Cortez	</span>, 	USA	</a>
+              
+                <span class="state">	CO  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Corvallis	">
+              <a href="shop.html?city=	Corvallis	"><span class="city">	Corvallis	</span>, 	USA	</a>
+              
+                <span class="state">	OR  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Costa Mesa	">
+              <a href="shop.html?city=	Costa Mesa	"><span class="city">	Costa Mesa	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cottbus	">
+              <a href="shop.html?city=	Cottbus	"><span class="city">	Cottbus	</span>, 	Germany	</a>
+              
+                <span class="state">	  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Council Bluffs	">
+              <a href="shop.html?city=	Council Bluffs	"><span class="city">	Council Bluffs	</span>, 	USA	</a>
+              
+                <span class="state">	IA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Country Club Hills	">
+              <a href="shop.html?city=	Country Club Hills	"><span class="city">	Country Club Hills	</span>, 	USA	</a>
+              
+                <span class="state">	IL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Covington	">
+              <a href="shop.html?city=	Covington	"><span class="city">	Covington	</span>, 	USA	</a>
+              
+                <span class="state">	KY  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cranston	">
+              <a href="shop.html?city=	Cranston	"><span class="city">	Cranston	</span>, 	USA	</a>
+              
+                <span class="state">	RI  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Craven	">
+              <a href="shop.html?city=	Craven	"><span class="city">	Craven	</span>, 	Canada	</a>
+              
+                <span class="state">	SK  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cromwell	">
+              <a href="shop.html?city=	Cromwell	"><span class="city">	Cromwell	</span>, 	USA	</a>
+              
+                <span class="state">	CT  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Crossville	">
+              <a href="shop.html?city=	Crossville	"><span class="city">	Crossville	</span>, 	USA	</a>
+              
+                <span class="state">	TN  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Crystal Bay	">
+              <a href="shop.html?city=	Crystal Bay	"><span class="city">	Crystal Bay	</span>, 	USA	</a>
+              
+                <span class="state">	NV  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Crystal River	">
+              <a href="shop.html?city=	Crystal River	"><span class="city">	Crystal River	</span>, 	USA	</a>
+              
+                <span class="state">	FL  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Culver City	">
+              <a href="shop.html?city=	Culver City	"><span class="city">	Culver City	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cupertino	">
+              <a href="shop.html?city=	Cupertino	"><span class="city">	Cupertino	</span>, 	USA	</a>
+              
+                <span class="state">	CA  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cuyahoga Falls	">
+              <a href="shop.html?city=	Cuyahoga Falls	"><span class="city">	Cuyahoga Falls	</span>, 	USA	</a>
+              
+                <span class="state">	OH  	</span>
+              
+            </li>
+            
+            <li class="delivery__item" data-sort="	Cypress	">
+              <a href="shop.html?city=	Cypress	"><span class="city">	Cypress	</span>, 	USA	</a>
+              
+                <span class="state">	TX  	</span>
+              
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+
+
+      </div>
+
+		</div>
+	</section>
+  </main>
+
+    
+        <div class="modal modal--auth fade" id="authModal">
+  <div class="modal-dialog " >
+    <div class="modal-content tab-content" role="document">
+      <div class="pane tab-pane fade active show" role="tabpanel" aria-expanded="true" id="authPane">
+        <div class="modal-body">
+          <div class="social-auth">
+            <a href="#" class="btn btn-ghost btn-auth btn-full btn-auth--fb">
+              <i class="icn-fb"></i>
+              Log in with Facebook
+            </a>
+            <a href="#" class="btn btn-ghost btn-auth btn-full btn-auth--gp">
+              <i class="icn-gp"></i>
+              Log in with Google+
+            </a>
+          </div>
+
+          <div class="divider" data-text="or"></div>
+
+          <form action="index-user.html" class="form--auth" id="formAuth">
+              <div class="glued">
+                <div class="form-group label-inside form-group--max">
+                    <input type="email" class="form-control" name="email" data-req="true" id="emailAuth" placeholder="">
+                    <label for="emailAuth">E-mail</label>
+                </div>
+                <div class="form-group label-inside form-group--max">
+                    <input type="password" class="form-control" name="password" data-req="true" id="passwordAuth" placeholder="">
+                    <label for="passwordAuth">Password</label>
+                </div>
+              </div>
+
+              <div class="grid grid-sb">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <input id="rememberCheck" type="checkbox" name="remember-check" hidden />
+                      <label for="rememberCheck">Remember me</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group forgot-wrapper">
+                    <a href="#recoverPane" data-toggle="tab" data-target="#recoverPane" data-type="no-tab" class="dashed">Forgot password?</a>
+                  </div>
+              </div>
+
+              <div class="form-group-submit">
+                <button type="submit" class="btn btn-default btn-full">Login</button>
+              </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#regPane" data-toggle="tab" data-target="#regPane" data-type="no-tab" class="dashed">Create account with e-mail</a>
+        </div>
+      </div> <!-- Auth pane end -->
+
+      <div class="pane tab-pane fade " role="tabpanel"  id="regPane">
+        <div class="modal-header">
+          <h4 class="modal-title">Create Account</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form--reg" id="formReg">
+              <div class="glued">
+                <div class="form-group label-inside form-group--max">
+                    <input type="email" class="form-control" name="email" data-req="true" id="emailReg" placeholder="">
+                    <label for="emailReg">E-mail</label>
+                </div>
+                <div class="form-group label-inside form-group--max">
+                    <input type="password" class="form-control" name="password" data-req="true" id="passwordReg" placeholder="">
+                    <label for="passwordReg">Password</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <div class="checkbox">
+                    <input id="subscribeCheck" type="checkbox" name="subsribe-check" hidden checked />
+                    <label for="subscribeCheck">Send me special offers and a hot story 2 times a month</label>
+                  </div>
+              </div>
+
+              <div class="form-group-submit">
+                <button type="submit" class="btn btn-default btn-full">Create Account</button>
+                <div class="disc">By signing up, I agree with <a href="#">Terms</a> and <a href="#">Privacy Policy</a></div>
+              </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#authPane" data-toggle="tab" data-target="#authPane" data-type="no-tab" class="dashed">I already have an account</a>
+        </div>
+      </div> <!-- Reg pane end -->
+
+      <div class="pane tab-pane fade " role="tabpanel"  id="recoverPane">
+        <div class="modal-header">
+          <h4 class="modal-title">Recover password</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form--recover" id="formReg">
+              <div class="glued">
+                <div class="form-group label-inside form-group--max">
+                    <input type="email" class="form-control" name="email" data-req="true" id="emailRecover" placeholder="">
+                    <label for="emailRecover">E-mail</label>
+                </div>
+              </div>
+
+              <div class="form-group-submit">
+                <button type="submit" class="btn btn-default btn-full">Recover password</button>
+                <div class="disc">We will sent you an email with instructions on how to reset your password</div>
+              </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#authPane" data-toggle="tab" data-target="#authPane" data-type="no-tab" class="dashed">Back to sign in</a>
+        </div>
+      </div> <!-- Recover pane end -->
+
+      <div class="pane tab-pane fade " role="tabpanel"  id="clubberPane">
+        <div class="modal-header">
+          <h4 class="modal-title">Become a Clubber</h4>
+          <p class="undertitle">Login via Facebook, Google+ or leave e-mail to unlock Fresh Seasonal Ideas. We’ll send you special offers and a hot story 2 times a month. </p>
+        </div>
+        <div class="modal-body">
+          <div class="social-auth">
+            <a href="#" class="btn btn-ghost btn-auth btn-full btn-auth--fb">
+              <i class="icn-fb"></i>
+              Unlock with Facebook
+            </a>
+            <a href="#" class="btn btn-ghost btn-auth btn-full btn-auth--gp">
+              <i class="icn-gp"></i>
+              Unlock with Google+
+            </a>
+          </div>
+
+          <div class="divider" data-text="or"></div>
+          <form action="#" class="form--unlock" id="formUnlock">
+              <div class="glued">
+                <div class="form-group label-inside form-group--max">
+                    <input type="email" class="form-control" name="email" data-req="true" id="emailUnlock" placeholder="">
+                    <label for="emailUnlock">E-mail</label>
+                </div>
+                <div class="form-group label-inside form-group--max">
+                    <input type="password" class="form-control" name="password" data-req="true" id="passwordUnlock" placeholder="">
+                    <label for="passwordUnlock">Password</label>
+                </div>
+              </div>
+
+              <div class="form-group-other">
+                  <div class="checkbox">
+                    <input id="subscribeCheck" type="checkbox" name="subsribe-check" hidden checked />
+                    <label for="subscribeCheck">Send me special offers and a hot story 2 times a month</label>
+                  </div>
+              </div>
+
+              <div class="form-group-submit">
+                <button type="submit" class="btn btn-default btn-full">Become a Clubber</button>
+              </div>
+              <div class="disc">By signing up, I agree with <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#authPane" data-toggle="tab" data-target="#authPane" data-type="no-tab" class="dashed">I already have an account</a>
+        </div>
+      </div>
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+</div>
+
+
+    
+    <div class="modal modal--promo fade" id="promoModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Don’t Forget About Mother’s Day!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="promo-message">21st September is the Mother’s day. Order flowers for her right now on this date and <strong>get 10% discount.</strong></p>
+        <a href="#" class="btn btn-default btn-full">Make my Mom Happy</a>
+      </div>
+      <div class="promo-image" style="background-image: url(images/modal-adv-image.jpg);"></div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+</div>
+    <div class="modal modal--contacts fade" id='contactsModal'>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="grid phones">
+          <div class="col col-50">
+            <p>
+              Number for
+              <select name="country" id="footerCountrySelect" class="select-menu select-ghost select-phone">
+                <option value="+49 (30) 26050" selected>Germany</option>
+                <option value="+7 (707) 7070707">Kazakhstan</option>
+                <option value="+380 (93) 5905092">Ukraine</option>
+              </select>
+            </p>
+            <p class="tel-wrapper"><a href="tel:+493026050">+49 (30) 26050</a></p>
+            <p>24/7 support, call anytime</p>
+          </div>
+          <div class="col col-50">
+            <p>Chat us anytime</p>
+            <p class="tel-wrapper">+7 701 426–05–50</p>
+            <ul class="message-list list--nostyle">
+              <li class="mess-icon" style="background-image: url(images/icons/c-whatsapp.svg)"></li>
+              <li class="mess-icon" style="background-image: url(images/icons/c-telegram.svg)"></li>
+              <li class="mess-icon" style="background-image: url(images/icons/c-viber.svg)"></li>
+              <li class="mess-icon" style="background-image: url(images/icons/c-imessage.svg)"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="contacts-body">
+          <div class="c-info">
+            <h6 class="company">Floradar LLC</h6>
+            <p class="adr-line">
+              Kazakhstan, Almaty, 050000 <br>
+              Abay ave. 364
+            </p>
+
+            <p class="email semi"><a href="mailto:helpme@floradar.me">helpme@floradar.me</a></p>
+            <ul class="c-social list--nostyle">
+              <li class="c-soc-item facebook"><a href="#" class="c-soc-link ">Stay informed</a></li>
+              <li class="c-soc-item twitter"><a href="#" class="c-soc-link">Ask us in Twitter</a></li>
+              <li class="c-soc-item instagram"><a href="#" class="c-soc-link">#happyfloradar</a></li>
+            </ul>
+          </div>
+          <div class="c-map" id="cMap" class="google-map" data-lat="40.7056258" data-lng="-73.97968">
+            <div ></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <h6 class="title--form">Any questions? Don’t hesitate to ask</h6>
+        <form action="#" class="form form--contacts">
+          <div class="form-group form-group--question label-inside">
+            <textarea name="c-question" id="cQuestion" name="message" data-req="true" class="form-control"></textarea>
+            <label for="cQuestion">Enter your question here</label>
+          </div>
+          <div class="form-group form-group--line">
+            <div class="form-group form-group--max label-inside">
+              <input type="text" name="name" data-req="true" id="cName" class="form-control">
+              <label for="cName">Your name</label>
+            </div>
+            <div class="form-group form-group--max label-inside">
+              <input type="text" name="phone" data-req="true" id="cPhone" class="form-control">
+              <label for="cPhone">Your phone</label>
+            </div>
+            <div class="form-group form-group--submit label-inside">
+              <button type="submit" class="btn btn-default">Send</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+
+</div>
+
+
+    <footer class="footer dark">
+  <div class="container">
+  	<div class="grid footer-menu">
+
+
+  		<div class="col col-25 footer-menu footer-menu-help">
+  			<h5 class="title--footer">NEED HELP?</h5>
+  			<ul class="list--nostyle">
+  				<li><a href="mailto:helpme@floradar.me">helpme@floradar.me</a></li>
+  				<li class="tel-wrapper">
+	  				<a href="tel:+493026050" class="link-tel">+49 (30) 26050</a>
+	  				for
+	  				<select name="country" id="footerCountrySelect" class="select-menu select-ghost">
+	  					<option value="+49 (30) 26050" selected>Germany</option>
+	  					<option value="+7 (707) 7070707">Kazakhstan</option>
+	  					<option value="+380 (93) 5905092">Ukraine</option>
+	  				</select>
+  				</li>
+  			</ul>
+        <h5 class="title--footer">LET’S BE FRIENDS</h5>
+        <ul class="list--nostyle socials">
+          <li><a href="#" class="socials-item"><span class="socials-item-icon icn-fb"></span></a></li>
+          <li><a href="#" class="socials-item"><span class="socials-item-icon icn-tw"></span></a></li>
+          <li><a href="#" class="socials-item"><span class="socials-item-icon icn-ig"></span></a></li>
+        </ul>
+  		</div> 
+
+      <div class="col col-50 footer-menu footer-menu-center">
+        <h5 class="title--footer">TOP-CLASS FLORISTS AT ONE SITE</h5>
+        <ul class="list--nostyle">
+          <li><a href="shop.html">International Flower Delivery</a></li>
+          <li><a href="where_we_deliver.html">Where We Deliver (7&nbsp;462)</a></li>
+          <li><a href="delivery_policy.html">Delivery Policy</a></li>
+          <li><a href="reviews.html">Customer Reviews (28)</a></li>
+          <li><a href="#contactsModal" data-toggle="modal" data-target="#contactsModal">Contacts</a></li>
+          <li><a href="business.html">For Business</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="partnership.html">Partnership</a></li>
+        </ul>
+      </div> 
+
+      <div class="col col-25 footer-menu footer-menu-side">
+        <div class="promo-block">
+          <p>Recommend us to friends and get promo-code of $5 for each, who pay for order</p>
+          
+            <a href="#authModal" data-toggle="modal" data-target="#authModal" data-callpane="#authPane" class="btn btn-ghost">Invite Friend</a>
+          
+        </div>
+        <p class="currency-set">Currency:
+          <select  class="cur cur-selector select-menu select-ghost" name="currency" id="currencyFooter">
+            <option value="$" selected="selected" data-min="68" data-max="107">USD</option>
+            <option value="€" data-min="63" data-max="100">EUR</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+          </select>
+        </p>
+      </div> 
+  	</div>
+  </div>
+  <section class="footer-bottom">
+    <div class="container">
+      <div class="copyright grid">
+      <div class="col col-75">
+        <div class="copy">
+          © Floradar LLC
+        </div>
+        <ul class=" copy copy--menu list--nostyle">
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="logo-dev col col-25">
+        <a class="copy rocket-link " href="http://rocketfirm.com" target="_blank">
+          <svg class="rocket-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 14.47"><title>Ракетная фирма</title><path class="logo-letter" d="M5,11.67L3.28,8.51H1.89v3.16H0V2.78H4.17A3.44,3.44,0,0,1,5.41,3,2.6,2.6,0,0,1,6.95,4.51a3.08,3.08,0,0,1,.21,1.14,3,3,0,0,1-.17,1,2.51,2.51,0,0,1-.45.78A2.54,2.54,0,0,1,5.91,8a2.39,2.39,0,0,1-.71.29l2,3.38H5ZM3.88,6.85a1.43,1.43,0,0,0,1-.32,1.09,1.09,0,0,0,.38-0.88,1.09,1.09,0,0,0-.38-0.88,1.43,1.43,0,0,0-1-.32h-2v2.4h2Z"/><path class="logo-letter" d="M13.11,11.83a5,5,0,0,1-1.85-.34A4.29,4.29,0,0,1,8.82,9.08a4.82,4.82,0,0,1-.35-1.85,4.82,4.82,0,0,1,.35-1.85A4.29,4.29,0,0,1,11.26,3,5.25,5.25,0,0,1,15,3a4.29,4.29,0,0,1,2.44,2.41,4.82,4.82,0,0,1,.35,1.85,4.82,4.82,0,0,1-.35,1.85A4.29,4.29,0,0,1,15,11.49,5,5,0,0,1,13.11,11.83Zm0-1.68a2.67,2.67,0,0,0,1.11-.23,2.6,2.6,0,0,0,.85-0.61,2.73,2.73,0,0,0,.55-0.92,3.58,3.58,0,0,0,0-2.32,2.8,2.8,0,0,0-.55-0.93,2.46,2.46,0,0,0-.85-0.61,2.93,2.93,0,0,0-2.23,0,2.39,2.39,0,0,0-.85.61,2.85,2.85,0,0,0-.54.93,3.57,3.57,0,0,0,0,2.32,2.77,2.77,0,0,0,.54.92,2.52,2.52,0,0,0,.85.61A2.67,2.67,0,0,0,13.11,10.15Z"/><path class="logo-letter" d="M23.67,11.83a5.15,5.15,0,0,1-1.87-.33,4.35,4.35,0,0,1-2.5-2.39,4.66,4.66,0,0,1-.37-1.87,4.66,4.66,0,0,1,.37-1.87A4.35,4.35,0,0,1,21.8,3a5.15,5.15,0,0,1,1.87-.33A4.34,4.34,0,0,1,25,2.82a4.14,4.14,0,0,1,1,.49,3.68,3.68,0,0,1,.79.69,5.6,5.6,0,0,1,.57.81l-1.63.8a2.43,2.43,0,0,0-.84-0.92,2.21,2.21,0,0,0-1.25-.37,2.8,2.8,0,0,0-1.11.22,2.63,2.63,0,0,0-.89.61,2.79,2.79,0,0,0-.58.93,3.19,3.19,0,0,0-.21,1.16,3.23,3.23,0,0,0,.21,1.17,2.71,2.71,0,0,0,.58.93,2.68,2.68,0,0,0,.89.61,2.8,2.8,0,0,0,1.11.22,2.24,2.24,0,0,0,1.25-.37,2.36,2.36,0,0,0,.84-0.93l1.63,0.79a5.54,5.54,0,0,1-.57.81,3.87,3.87,0,0,1-.79.7,4,4,0,0,1-1,.49A4.34,4.34,0,0,1,23.67,11.83Z"/><path class="logo-letter" d="M34.53,11.67L31.84,8.11l-0.69.83v2.73H29.25V2.78h1.89v4l3.15-4h2.33L33.09,7l3.77,4.72H34.53Z"/><path class="logo-letter" d="M38.53,11.67V2.78h6.29V4.45h-4.4V6.33h4.3V8h-4.3v2h4.4v1.67H38.53Z"/><path class="logo-letter" d="M49.21,11.67V4.45h-2.6V2.78h7.08V4.45H51.11v7.22H49.21Z"/><path class="logo-letter" d="M73.56,11.67V2.78h6.29V4.45h-4.4V6.33h4.3V8h-4.3v3.68H73.56Z"/><path class="logo-letter" d="M82,11.67V2.78h1.89v8.89H82Z"/><path class="logo-letter" d="M91.18,11.67L89.43,8.51H88v3.16H86.15V2.78h4.17A3.44,3.44,0,0,1,91.57,3,2.6,2.6,0,0,1,93.1,4.51a3.08,3.08,0,0,1,.21,1.14,3,3,0,0,1-.17,1,2.51,2.51,0,0,1-.45.78,2.54,2.54,0,0,1-.63.53,2.39,2.39,0,0,1-.71.29l2,3.38H91.18ZM90,6.85a1.43,1.43,0,0,0,1-.32,1.09,1.09,0,0,0,.38-0.88A1.09,1.09,0,0,0,91,4.77a1.43,1.43,0,0,0-1-.32H88v2.4h2Z"/><path class="logo-letter" d="M102.92,11.67V5.45l-2.51,6.22H99.59L97.08,5.45v6.22H95.19V2.78h2.65L100,8.16l2.16-5.37h2.66v8.89h-1.89Z"/><path class="logo-icon" d="M70.57,7.23a7.24,7.24,0,1,0-7.24,7.24A7.23,7.23,0,0,0,70.57,7.23ZM61.75,12c-0.36.07-.32-0.1-0.21-0.25l0.15-.17c0.77-.87,1.37-1.19.37-1.19s-1.32,0-1.59-.28h0a2.62,2.62,0,0,1-.28-1.59c0-1-.32-0.4-1.2.37L58.81,9c-0.15.11-.32,0.15-0.25-0.21A5.23,5.23,0,0,1,60,6.14a12,12,0,0,1,2.38-.89c2.29-1.65,4.48-2.31,4.95-2s-0.32,2.65-2,4.95a12,12,0,0,1-.89,2.38A5.23,5.23,0,0,1,61.75,12Z"/><path class="logo-icon" d="M65.08,6.78A1.24,1.24,0,0,1,63.79,8,1.25,1.25,0,1,1,65.08,6.78Z"/></svg>
+          <span class="logo-year">2017</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+</footer>
+
+    <div class='chat-help'>
+  <div class='wrapper'>
+    <i class='icon'><img src="images/icons/call-me.svg" alt=""></i>
+    <p class='chat'>Chat-us</p>
+    <p class='numbrs'>53 738</p>
+    <p class='numbrs-desc'>Bouquets have been delivered</p>
+    <p class='help'>Help</p>
+  </div>
+</div>
+
+
+
+    <script src="scripts/vendor.min.js"></script>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    <script src="scripts/main.min.js"></script>
+
+</body>
+</html>

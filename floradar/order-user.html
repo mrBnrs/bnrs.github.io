@@ -1,0 +1,1029 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flo Radar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/vendor.min.css">
+
+    <link rel="stylesheet" href="styles/main.min.css">
+
+    <script src='https://cdn.jsdelivr.net/bluebird/latest/bluebird.min.js'></script>
+
+    <script src="scripts/vendor/modernizr.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="scripts/vendor/respond.min.js"></script>
+    <![endif]-->
+
+
+
+  </head>
+  <body >
+  <div id="preloader">
+
+<style type="text/css">.js div#preloader { position: fixed; left: 0; top: 0; z-index: 1999; width: 100%; height: 100%; overflow: visible; background: #fff; display: -webkit-flex;
+display: -ms-flex;display: flex; justify-content: center;-ms-align-items: center;align-items: center;}</style></div>
+
+    <input type="hidden" name="special_fee" id="special_fee" value="holiday price">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+
+    
+
+
+<div class="modal modal--menu fade" id="menuModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <nav class="nav nav--menu">
+              <ul class="nav-ul">
+                  <li class="nav-item logo"><a href="index.html" class="logo-link"></a></li>
+                  <li class="nav-item"><a href="shop.html" class="nav-link"><span>Shop Bouquets</span></a></li>
+                  <li class="nav-item"><a href="blog.html" class="nav-link"><span>Hot Blog</span></a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link"><span>Magic</span></a></li>
+                  <li class="nav-item"><a href="profile-planner-user.html" class="nav-link"><span>Gift Planner</span></a></li>
+                  <li class="nav-item"><a href="#" data-dismiss="modal" class="nav-link chat-us"><span>Chat-us <i class='icon'><img src="images/icons/call-me.svg" alt=""></i></span></a></li>
+              </ul>
+          </nav>
+
+
+          
+          <nav class="nav nav--menu-sec nav--menu-user">
+            <ul class="nav-ul list--nostyle">
+              <li class="nav-item"><a href="profile-orders.html" class="nav-link">My Orders</a></li>
+        			<li class="nav-item"><a href="profile-planner.html" class="nav-link">Gift Planner</a></li>
+        			<li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+        			<li class="nav-item"><a href="profile-friends.html" class="nav-link">Invite Friends</a></li>
+        			<li class="nav-item"><a href="index.html" class="nav-link">Log Out <i class="icn-logout"></i></a></li>
+            </ul>
+          </nav>
+          
+
+
+
+          <nav class="nav nav--menu-sec">
+            <ul class="nav-ul list--nostyle">
+
+              <li class="nav-item"><a class="nav-link" href="where_we_deliver.html">Where We Deliver (7 462)</a></li>
+              <li class="nav-item"><a class="nav-link" href="delivery_policy.html">Delivery Policy</a></li>
+              <li class="nav-item"><a class="nav-link" href="reviews.html">Customer Reviews (28)</a></li>
+              <li class="nav-item"><a class="nav-link" href="business.html">For Business</a></li>
+              <li class="nav-item"><a href="#contactsModal" data-toggle="modal" data-target="#contactsModal" class="nav-link"><span>Contacts</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+            </ul>
+          </nav>
+      </div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+</div>
+
+<header class="header
+    header--light header--transparent 
+    header--stickable 
+    
+    header--order 
+    
+  ">
+    <div class="wrapper">
+        <div class="container">
+            <nav class="nav nav--primary">
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="shop.html" class="nav-link"><span>Shop Bouquets</span></a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link"><span>Hot Blog</span></a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link"><span>Magic</span></a></li>
+                    <li class="nav-item"><a href="profile-planner-user.html" class="nav-link"><span>Gift Planner<span class="discount">-7%</span></span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="index.html" class="logo-link"></a>
+        </div>
+
+        <div class="user-block">
+            
+            <a href="profile-orders.html" data-toggle="menu" data-target="#userMenu" class="user-link menu-link">
+                <span class="userpic" style="background-image: url(pics/userpic.jpg)"></span>
+                <span class="username">christian.92</span>
+            </a>
+            <div class="usermenu" id="userMenu">
+	<div class="usermenu-content">
+		<ul class="nav nav--usermenu">
+			<li class="nav-item"><a href="profile-orders.html" class="nav-link">My Orders</a></li>
+			<li class="nav-item"><a href="profile-planner.html" class="nav-link">Gift Planner</a></li>
+			<li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+			<li class="nav-item"><a href="profile-friends.html" class="nav-link">Invite Friends</a></li>
+			<li class="nav-item"><a href="index.html" class="nav-link">Log Out <i class="icn-logout"></i></a></li>
+		</ul>
+	</div>
+</div>
+ 
+        </div>
+        <div class="menu-block medium">
+          <button class="menu-button"  data-toggle="modal" data-target="#menuModal"><span>menu</span></button>
+        </div>
+    </div>
+</header>
+
+  <main class="main">
+    <section class="order">
+    	<section class="content topimage" style="background-image: url(images/order-page-bg.jpg)"></section>
+      <section class="content has-secondary-menu">
+        <div class="container">
+          <div class='wrapper__order'>
+            <article class="order-info">
+              <nav class="nav nav--secondary nav--breadcrumbs">
+                  <ul class="nav-ul">
+                      <li class="nav-item"><a href="#" class="nav-link">New Flora</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">All countries</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">USA</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">New York Blooms (Free Delivery)</a></li>
+                  </ul>
+              </nav>
+              <div class="order-info-guarantee">
+                <h3 class="title--primary">Guarantee from Karl</h3>
+                <div class="order-info-text quoted italic">I have delivered flowers for 20 years and have any unhappy clients. <br> If you won’t be happy, I’ll kill you, be sure. I can deliver Pink Blooms tomorrow from 10:00 to 19:00.</div>
+                <div class="florist-owner">
+    							<div class="userpic" style="background-image: url(pics/florist/florist-owner.png);"></div>
+    							<div class="info">
+    								<p class="semi name">Karl Adriaan</p>
+    								<p class="job-title">Owner</p>
+    							</div>
+    						</div>
+              </div>
+              <div class="order-info-about">
+                <h3 class="title--primary">About Bouquet</h3>
+                <div class="order-info-text">Show them your passion and love with red flowers! RED is the color of passion, love and desire, red is emotionally intense and powerful. Sending red flowers will always impress.</div>
+                <div class="grid grid--about">
+                  <div class="col col-50">
+                    <h5>Pink Blooms is best</h5>
+                    <p>For your girlfriend birthday, st. Valentine’s Day, first date with girlfriend and daily surprises.</p>
+                  </div>
+                  <div class="col col-50">
+                    <h5>2 565 th</h5>
+                    <p>Pink Blooms bouquet was delivered to Helena-Herrerain <span class="country">&#x1F1E6;&#x1F1FA;</span> Melbourne 43 mins ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-info-feedback">
+                <h3 class="title--primary">Feedback</h3>
+                <div class="grid feedback-cards">
+                  <div class="col feedback-card">
+                    <div class="userpic userpic--male"></div>
+                    <div class="text">
+                      <h5>Tomas, sender</h5>
+                      <div class="feedback-card-text">
+                        Fast, simple and intuitive. Floradar — the best place, I’ll recommend it to all my friends.
+                      </div>
+                      <div class='audio-player'>
+                        <button type="button" class="btn btn-ghost btn--play" data-toggle="play" data-target="#review1">Voice Feedback</button>
+                        <audio src="http://markup.rocketfirm.net/flora/audio/review.mp3" id="review1"></audio>
+                      </div>
+
+                    </div>
+                  </div> <!-- end-feedback-card -->
+                  <div class="col feedback-card">
+                    <div class="userpic userpic--female" style="background-image: url(pics/userpic.jpg);"></div>
+                    <div class="text">
+                      <h5>Suzanne, recipient</h5>
+                      <div class="feedback-card-text">
+                        Very cool bouquet! I was sooo amazed and excited! It definitely made my day! :)
+                      </div>
+                      <div class='audio-player'>
+                        <button type="button" class="btn btn-ghost btn--play" data-toggle="play" data-target="#review2">Voice Feedback</button>
+                        <audio src="http://markup.rocketfirm.net/flora/audio/review-female.mp3" id="review2"></audio>
+                      </div>
+                    </div>
+                  </div> <!-- end-feedback-card -->
+                </div> <!-- end-feedback-cards -->
+                <a href="#" class='small'>Other 23 reviews</a>
+              </div> <!-- end-feedback -->
+
+              <div class="grid grid--about">
+                <div class="col col-50">
+                  <h5>Local Flowers</h5>
+                  <p>Your bouquet will be nicely arranged and hand delivered by «Euroflorist» flowershop.</p>
+                </div>
+
+                <div class="col col-50">
+                  <h5>Quality Control</h5>
+                  <p>All local florists we work with pass special quality control procedure.</p>
+                </div>
+
+                <div class="col col-50">
+                  <h5>Bouquets Philosophy</h5>
+                  <p>If florist doesn’t have flowers as on photo, he’ll use similar by shape and color. Bouquet will be awesome anyway, we promise.</p>
+                </div>
+
+                <div class="col col-50">
+                  <h5>Guarantees</h5>
+                  <p>If your recipient isn’t 100% happy with your order, we’ll make it right.</p>
+                </div>
+
+                <div class="col col-50">
+                  <h5>Delivery</h5>
+                  <p>We always deliver on time!</p>
+                </div>
+              </div> <!-- end-about -->
+            </article>
+            <aside class="card-container">
+              <section class="order-card">
+
+  <div class="gallery order-gallery" id="orderGallery" role='gall'>
+    
+
+
+
+    <div class="fotorama gallery-container" data-arrows="false" data-loop="true" data-fit="contain"
+     data-nav="thumbs">
+      <a href="pics/order-gal/photo1.png"><img src="pics/order-gal/thumb1.png"></a>
+      <a href="pics/order-gal/photo2.png"><img src="pics/order-gal/thumb2.png"></a>
+      <a href="pics/order-gal/thumb1.png"><img src="pics/order-gal/thumb1.png"></a>
+    </div>
+
+    <button type="button" class="close" data-dismiss="gall" aria-label="Close"><i class="icn-close"></i></button>
+</div>
+
+  <div class="order-card-content">
+    <form action="/setorder" method="POST" class="form form--mid form--order tab-content">
+    <div class="order-screen tab-pane fade show active" id="orderScreenOne" role="tabpanel">
+      <div class="order-card-header">
+        <div class="bouquet-image-holder">
+          <div class="bouquet-image" style="background-image: url(pics/bouquets/bouquetb6.png);"></div>
+          <div class="bouquet-label" style="background-image: url(images/bouquets/labels/fresh.png);"></div>
+          <a href="#orderGallery" data-toggle="gall" data-target="#orderGallery" class="overlay"></a>
+        </div>
+      </div>
+      <div class="order-card-body">
+        <h3 class="bouquet-title">Maisie</h3>
+        <div class="bouquet-desc">Size Ø 27 cm <i class="icn icn-deluxe"></i></div>
+
+          <div class="glued grid">
+              <div class="form-group label-inside has-icon col col-70">
+                
+                  <input type="text" class="form-control autoselect-city check-city" id="orderCity" name="city" data-req="true" data-url="/country" placeholder="" >
+                
+                  <label for="orderCity">Free delivery to</label>
+                  <i class="input-icon icn-location"></i>
+              </div>
+              <div class="form-group-helper col col-30">
+                <span class="form-group-info"><span class="cur">$</span><span class="price-value price-value--max">107</span> to any&nbsp;city</span>
+              </div>
+              <div class="form-group label-inside form-group--right has-icon date col col-70">
+                  <input type="text" class="form-control datepicker " id="orderDate" name="date" data-req="true" placeholder="">
+                  <label for="orderDate">Suprise Date</label>
+                  <i class="input-icon icn-calendar"></i>
+              </div>
+              <div class="form-group-helper col col-30">
+                <span class="preset-values">
+                  <a href="#" class="dashed" data-toggle="preset" data-target="#orderDate" data-preset="date" data-date="1">Tomorrow</a>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <a href="#orderScreenTwo" data-toggle="tab" data-type="no-tab" href="#orderScreenTwo" role="tab" class="btn btn-default btn-full">Send for only <span class="cur">$</span><span class="price-value price-value--max">107</span></a>
+            </div>
+
+
+        <div class="order-card-disc small">
+          No hidden costs, price is final. Only on big holidays prices may grow up.
+        </div>
+      </div>
+      <div class="order-card-footer semi">
+        <i class="icn-phone hl"></i><a class="dashed" href="#instantOrderModal" data-toggle="modal" data-target="#instantOrderModal">Instant order</a> at +49 (0) 4522 5084 50
+      </div>
+    </div> <!-- end.order-screen -->
+    <div class="order-screen tab-pane fade" id="orderScreenTwo" role="tabpanel">
+      <div class="order-card-header">
+        <h5 class="order-title--secondary"><a href="#orderScreenOne" data-toggle="tab" data-type="no-tab" href="#orderScreenOne" role="tab" class="link backlink">Maisie</a></h5>
+        <div class="form-info"><span class="city">Amsterdam, NL </span>on <span class="date">29 Sep</span></div>
+        <div class="bouquet-image-holder bouquet-image-holder--small">
+          <div class="bouquet-image" style="background-image: url(pics/bouquets/bouquetb6.png);"></div>
+          <a href="#orderGallery" data-toggle="gall" data-target="#orderGallery" class="overlay"></a>
+        </div>
+      </div>
+      <div class="order-card-body">
+
+        <nav class="nav nav--secondary nav--breadcrumbs nav--tabs" role="tablist" data-type="form-tab">
+            <ul class="nav-ul">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#messageBlock" id="messageTab" role="tab">Message</a></li>
+                <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#recipientBlock" id="recipientTab" role="tab">Recipient</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#giftBlock" id="giftTab" role="tab">Free Gift</a></li>
+                
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#paymentBlock" id="paymentTab" role="tab">Pay</a></li>
+                
+
+            </ul>
+        </nav>
+        <!-- Tab panes -->
+        <div class="tab-content form-inner-tab-panes">
+
+          <div class="tab-pane fade show active" id="messageBlock" role="tabpanel">
+            <div class="form-group disc disc--auth">
+              Have an account? <a href="#authModal" data-toggle="modal" data-target="#authModal"  class="dashed">Sign in</a> to make order fast.
+            </div>
+              <div class="glued">
+                <div class="form-group label-inside form-group--right ui-front">
+                    <input type="text" class="form-control not-empty" data-type="selectbox" data-rel="#reasonOptions" name="reason" data-req="true" id="orderReason">
+                    <label for="orderReason">Surprise reason</label>
+                    <select class="reasonOptions" id="reasonOptions" hidden>
+                      <option value="Birthday">Birthday</option>
+                      <option value="Wedding">Wedding</option>
+                      <option value="Anivesary">Anivesary</option>
+                    </select>
+                </div>
+
+
+
+                <div class="form-group label-inside form-group--max">
+                  <textarea class="form-control" name="message" data-req="true" id="orderMessage" rows="3"></textarea>
+                  <label for="orderMessage">Write your message here (optional)</label>
+                </div>
+              </div>
+              <div class='form-group'>
+                <div class="checkbox">
+                  <input id="sendphoto" type="checkbox" name="sendphoto" hidden  checked/>
+                  <label for="sendphoto">Send me photo of bouquet before delivery</label>
+                </div>
+              </div>
+              <div class="form-group form-group-submit">
+                <a href="#recipientBlock" data-toggle="tab" data-type="no-tab" role="tab" data-rel="#recipientTab" class="btn btn-default btn-full">Go to Recipient Info</a>
+              </div>
+          </div> <!-- end-meggage-block -->
+
+
+          <div class="tab-pane fade " id="recipientBlock" role="tabpanel">
+            <div class="glued">
+              <div class="form-group label-inside form-group--right ui-front">
+                  <input type="text" class="form-control not-empty" data-type="selectbox" data-rel="#namesOptions" name="rec-name" data-req="true" id="orderRecName">
+                  <label for="orderRecName">Recipient’s name</label>
+                  <select id="namesOptions" hidden>
+                    <option >Ivan Dorn</option>
+                    <option >Kate Berringshmidt</option>
+                    <option >Mariya Manina</option>
+                  </select>
+              </div>
+              <div class="form-group label-inside">
+                <input type="tel" class="form-control" name="rec-phone" data-req="true" id="orderRecPhone">
+                <label for="orderRecPhone">Recipient’s phone</label>
+              </div>
+              <div class="form-group label-inside">
+                <textarea class="form-control" name="rec-address" data-req="true" id="orderRecAddress" rows="3"></textarea>
+                <label for="orderRecAddress">Address details</label>
+              </div>
+              <div class="form-group label-inside form-group--max">
+                <textarea class="form-control" name="desc-custom-order" id="orderMessage" rows="3"></textarea>
+                <label for="orderMessage">Special requests (delivery&nbsp;time,&nbsp;if&nbsp;necessary)</label>
+              </div>
+            </div>
+            <div class="form-group form-group-submit">
+              <a href="#giftBlock" data-toggle="tab" data-type="no-tab" role="tab" data-rel="#giftTab" class="btn btn-default btn-full">Go next to Add a Free Gift</a>
+            </div>
+          </div><!-- end-reciepient-block -->
+
+          <div class="tab-pane fade" id="giftBlock" role="tabpanel">
+            <div class="grid grid--gifts">
+              <div class="col col-50 gift-item">
+                <input type="radio" name='order-gift' id='orderGift1' value='lolipop'>
+                <label for="orderGift1" class="overlay"></label>
+                <div class="gift-img"><img src="pics/gifts/gift1.png" alt="lolipop"></div>
+                <div class="gift-desc">Free Lollipop</div>
+              </div>
+
+              <div class="col col-50 gift-item">
+                <input type="radio" name='order-gift' id='orderGift2' value='icecream'>
+                <label for="orderGift2" class="overlay"></label>
+                <div class="gift-img"><img src="pics/gifts/gift2.png" alt="icecream"></div>
+                <div class="gift-desc">Free Ice Cream</div>
+              </div>
+
+              <div class="col col-50 gift-item">
+                <input type="radio" name='order-gift' id='orderGift3' value='nutrition'>
+                <label for="orderGift3" class="overlay"></label>
+                <div class="gift-img"><img src="pics/gifts/gift3.png" alt="nutrition"></div>
+                <div class="gift-desc">Free Floral Nutrition</div>
+              </div>
+
+              <div class="col col-50 gift-item gift-item--nogift">
+                <input type="radio" name='order-gift' id='orderGift4' value='none' checked="checked">
+                <label for="orderGift4" class="overlay"></label>
+                <div class="gift-img">Do Not Add Free&nbsp;Gift</div>
+              </div>
+            </div>
+            <div class="form-group form-group-submit">
+              <a href="#paymentBlock" data-toggle="tab" role="tab" data-type="no-tab"  data-rel="#paymentTab" class="btn btn-default btn-full">Proceed to Pay</a>
+            </div>
+          </div><!-- end-gift-block -->
+
+          
+          <div class="tab-pane fade" id="paymentBlock" role="tabpanel">
+            <div class="glued">
+              <div class="form-group radio-group radio-group-big" data-toggle="radio" data-target=".for-card">
+                  <div class="radio">
+                      <input type="radio" class="payment-radio" name="payment-type" value="card" id="orderPaymentType1" data-bool="true" checked>
+                      <label class="form-control" for="orderPaymentType1">Use Card</label>
+                  </div>
+                  <div class="radio">
+                      <input type="radio" class="payment-radio" name="payment-type" value="paypal" data-bool="false" id="orderPaymentType2">
+                      <label class="form-control" for="orderPaymentType2">Use Paypal</label>
+                  </div>
+              </div>
+              <div class="form-group ls-h for-card label-inside">
+                <input type="tel" class="form-control cc-number" name="cc-number" data-req="true" id="paymentCardNumber">
+                <label for="paymentCardNumber">Card Number</label>
+              </div>
+
+              <div class="form-group for-card ls-h form-group-grid">
+                <div class="form-group col col-50 label-inside">
+                  <input type="tel" class="form-control only-number cc-expire" name="cc-expire" data-req="true" id="paymentCardExpire">
+                  <label for="paymentCardExpire">MM / YY</label>
+                </div>
+                <div class="form-group  col col-50  has-icon label-inside">
+                  <input type="password" class="form-control only-number cc-cvv" name="cc-cvv" data-req="true" id="paymentCardCvv" maxlength="4" pattern="[0-9]*" inputmode="numeric">
+                  <label for="paymentCardCvv">CVC / CVV</label>
+                  <span class="input-icon input-icon--interactive"><span class="hint--medium  hint--top-left" aria-label="The last 3 or 4 digits on back of your card">?</span></span>
+                </div>
+              </div>
+
+              <div class="form-group for-card ls-h label-inside">
+                <input type="text" class="form-control only-capital" name="cc-name" data-req="true" id="paymentCardName">
+                <label for="paymentCardName">NAME ON CARD</label>
+              </div>
+            </div>
+
+            <div class="glued">
+              <div class="form-group label-inside">
+                <input type="email" class="form-control " name="email" data-req="true" id="orderEmail">
+                <label for="orderEmail">Your e-mail to track order</label>
+              </div>
+              <div class="form-group label-inside">
+                <input type="tel" class="form-control only-capital" name="phone" data-req="true" id="orderPhone">
+                <label for="orderPhone">Your phone</label>
+              </div>
+            </div>
+
+            <div class="form-group form-group--line ">
+              <div class="form-group form-group--max label-inside form-group--right ui-front">
+                    <select  class="form-control select-menu not-empty" name="currency" id="orderReason">
+                      <option value="USD" selected>US Dollar</option>
+                      <option value="EUR">Euro</option>
+                      <option value="JPY">JP Yen</option>
+                    </select>
+                    <label for="orderReason">Pay in</label>
+                </div>
+
+                <div class="form-group  coupon-wrapper">
+                  <a href="#couponModal" data-toggle="modal" data-target="#couponModal"  class="dashed">Coupon code</a>
+                  <input type="text" name="coupon" id="orderCoupon" hidden>
+
+                </div>
+            </div>
+
+            <div class="form-group ">
+                <button type="submit" class="btn btn-default btn-full">Pay <span class="cur">$</span><span class="price-value price-value--max">107</span> and Start a Magic</button>
+            </div>
+
+            <div class="order-card-disc small">
+              You are on a Secured Page. Your information will be encrypted by SSL certificates. By placing this order, you accept the <a href="#">terms</a> and <a href="#">privacy policy</a>.
+            </div>
+            <div class="order-card-cert">
+              <ul class="cert-list list--nostyle">
+                <li class="cert-item"><img src="images/certificates/cert1x2.png" alt="Visa"></li>
+                <li class="cert-item"><img src="images/certificates/cert2x2.png" alt="MasterCard"></li>
+                <li class="cert-item"><img src="images/certificates/cert3x2.png" alt="Godaddy"></li>
+                <li class="cert-item"><img src="images/certificates/cert4x2.png" alt="pcj"></li>
+                <li class="cert-item"><img src="images/certificates/cert5x2.png" alt="billing secure 100%"></li>
+              </ul>
+            </div>
+
+          </div> <!-- end-payment-block -->
+
+          
+
+        </div> <!-- end-tab-panes -->
+
+      </div> <!-- end-order-cad-body -->
+
+    </div> <!-- end.order-screen -->
+    </form>
+  </div>
+  <div class='spacer'></div>
+</section>
+
+<div class="modal fade modal--message modal--coupon" id="couponModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Coupon Code</h4>
+      </div>
+      <div class="modal-body">
+        <p>You'll get coupon in our promo e-mail or when your referral friend pays his first order. </p>
+        <form action="#" id="couponForm">
+          <div class="form-group label-inside">
+            <input type="text" class="form-control" name="coupon"  id="couponField">
+            <label for="couponField">Coupon Code</label>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">Get Discount</button>
+          </div>
+        </form>
+      </div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal--message modal--instant" id="instantOrderModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Instant Order</h4>
+      </div>
+      <div class="modal-body">
+        <p>We’ll call you back within 15 minutes. All your data are safe.</p>
+        <form action="/" id="instantOrderForm">
+          <div class="form-group label-inside">
+            <input type="tel" class="form-control input--tel" name="phone" data-req="true" id="instantOrderPhone" placeholder="Phone">
+            <label for="instantOrderPhone">Phone</label>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">Call me Back</button>
+          </div>
+        </form>
+      </div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+</div>
+
+
+            </aside>
+          </div><!-- end-wraper__order -->
+        </div>
+      </section>
+    </section> <!-- end-order -->
+    <section class=" bouquets">
+      <div class="container">
+        <h3 class="title--primary">People Also Love to Send</h3>
+        
+        <div class='flow-wrapper' >
+	
+	<div class="flow flow--bouquets flow--bouquets--small">
+
+		
+		<div class="bouquet bouquet--small orange">
+			<div class="bouquet-imgholder">
+				<div class="bouquet-img b-lazy" data-src="pics/bouquets/bouquet1.png"></div>
+				<div class="bouquet-icon">
+					<div class="avers" style="background-image: url(images/bouquets/icons/orange-pic.png)"></div>
+					<div class="revers" style="background-image: url(images/bouquets/icons/orange-text.png)"></div>
+				</div>
+				<a href="order.html" class="overlay"></a>
+			</div>
+			<div class="bouquet-title">
+				<a href="order.html" class="bouquet-title-link">Orange Blooms</a>
+				<a href="order.html" class="btn btn-price btn-small btn-ghost ">
+					<span class="price">
+						<span class="cur">$</span><span class="price-value price-value--min">68</span>
+					</span>
+				</a>
+			</div>
+			<div class="bouquet-desc">Delivered to <span class='flag'>:flag-us:</span>&nbsp;New&nbsp;York 7&nbsp;hours ago</div>
+		</div>
+		
+		<div class="bouquet bouquet--small blue">
+			<div class="bouquet-imgholder">
+				<div class="bouquet-img b-lazy" data-src="pics/bouquets/bouquet2.png"></div>
+				<div class="bouquet-icon">
+					<div class="avers" style="background-image: url(images/bouquets/icons/blue-pic.png)"></div>
+					<div class="revers" style="background-image: url(images/bouquets/icons/blue-text.png)"></div>
+				</div>
+				<a href="order.html" class="overlay"></a>
+			</div>
+			<div class="bouquet-title">
+				<a href="order.html" class="bouquet-title-link">Blue Blooms</a>
+				<a href="order.html" class="btn btn-price btn-small btn-ghost ">
+					<span class="price">
+						<span class="cur">$</span><span class="price-value price-value--min">68</span>
+					</span>
+				</a>
+			</div>
+			<div class="bouquet-desc">Delivered to <span class='flag'>:flag-us:</span>&nbsp;New&nbsp;York 7&nbsp;hours ago</div>
+		</div>
+		
+		<div class="bouquet bouquet--small white">
+			<div class="bouquet-imgholder">
+				<div class="bouquet-img b-lazy" data-src="pics/bouquets/bouquet3.png"></div>
+				<div class="bouquet-icon">
+					<div class="avers" style="background-image: url(images/bouquets/icons/white-pic.png)"></div>
+					<div class="revers" style="background-image: url(images/bouquets/icons/white-text.png)"></div>
+				</div>
+				<a href="order.html" class="overlay"></a>
+			</div>
+			<div class="bouquet-title">
+				<a href="order.html" class="bouquet-title-link">White Blooms</a>
+				<a href="order.html" class="btn btn-price btn-small btn-ghost ">
+					<span class="price">
+						<span class="cur">$</span><span class="price-value price-value--min">68</span>
+					</span>
+				</a>
+			</div>
+			<div class="bouquet-desc">Delivered to <span class='flag'>:flag-us:</span>&nbsp;New&nbsp;York 7&nbsp;hours ago</div>
+		</div>
+		
+	</div>
+	</div>
+
+      </div>
+    </section>
+    
+<section class="content benefits-icons">
+	<div class="container">
+		<div class="grid grid--benefits">
+		
+			<div class="col benefits-item">
+				<img src="images/logos/fresh.png" srcset="images/logos/fresh.png 1x, images/logos/fresh@2x.png 2x" alt="Fresh">
+			</div>
+		
+			<div class="col benefits-item">
+				<img src="images/logos/sat_icon.png" srcset="images/logos/sat_icon.png 1x, images/logos/sat_icon@2x.png 2x" alt="Satisfacton">
+			</div>
+		
+			<div class="col benefits-item">
+				<img src="images/logos/support.png" srcset="images/logos/support.png 1x, images/logos/support@2x.png 2x" alt="24/7 support">
+			</div>
+		
+			<div class="col benefits-item">
+				<img src="images/logos/safe.png" srcset="images/logos/safe.png 1x, images/logos/safe@2x.png 2x" alt="Safe and secure">
+			</div>
+		
+			<div class="col benefits-item">
+				<img src="images/logos/money.png" srcset="images/logos/money.png 1x, images/logos/money@2x.png 2x" alt="Fixed prices">
+			</div>
+		
+		</div>
+	</div>
+</section>
+
+    <section class="content grey later-form">
+	<div class="container">
+		<div class="wrapper">
+			<h2 class="title--primary">Need Flowers, but Later?</h2>
+			<p class="undertitle">
+				
+					You will be notified by mail before chosen date.
+				
+			</p>
+			<form action="#" class="form form--big form--line form--shadow">
+
+				<div class="form-group label-inside has-icon form-group--max">
+			        <input type="text" class="form-control datepicker" id="date" name="date" data-req="true" placeholder="">
+			        <label for="date">Suprise Date</label>
+			        <i class="input-icon icn-calendar"></i>
+			    </div>
+				
+				<div class="form-group form-group--submit">
+					<button type="submit" class="btn btn-default">REMIND ME</button>
+					<span class='tl tl--under tl--discount'></span>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+    
+<section class="content blog dark">
+	<div class="container">
+		<div class="text-center">
+			<h1><span class="invert">Brandon vs. Amanda</span></h1>
+			<p class="undertitle">Amanda and Brandon tell stories about relationships between he and she from both sides. No spam, only unique articles.</p>
+		</div>
+		<div class="article-block article-block--main article">
+			<aside class="fighter male">
+				<div class="fighter-img"></div>
+				<h5>Brandon</h5>
+				<h4 class='votes'><i class="icn-clap"></i> 38 votes</h4>
+			</aside>
+			<div class="article-wrapper article-item">
+				<div class="article-thumb">
+					<a href="blog-article.html" class="overlay"></a>
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="575px" height="430px" viewBox="0 0 575 430">
+					   <defs>
+							<mask id="mask2">
+							 <path fill="#FFFFFF" stroke="none" d="M 264.05 0 L 212 69.05 381 374 352.2 430 575 430 575 0 264.05 0 Z"/>
+							</mask>
+							<mask id="mask1">
+							 <path fill="#FFFFFF" stroke="none" d="M 212 69.05 L 258 0 0 0 0 430 362.2 430 391 374 212 69.05 Z"/>
+							</mask>
+					   </defs>
+					   <!-- minimum image width 440px  max-image width 575px image height 430px — important (no cross browser solution for css styling) -->
+								   	<g class="wrapper">
+								   			<g class="img-mask" mask="url(#mask1)">
+						         <image class="blog-img-title" x="0" y="0" transform='translate(-140 0)' width='575px' height='430px' xlink:href="pics/blog-img-title-1.jpg"/>
+						   </g>
+
+						   <g class="img-mask" mask="url(#mask2)">
+						        <image class="blog-img-title" x="575" y="0" width='575px' height='430px' transform='translate(-431 0)'   xlink:href="pics/blog-img-title-2.jpg"/>
+						   </g>
+								   		</g>
+					</svg>
+
+				</div>
+				<h4 class="article-title"><a href="blog-article.html" class="article-link"><span class="invert">What is Perfect Date for Men and&nbsp;Women?</span></a></h4>
+				<div class="lightening"></div>
+			</div>
+			<aside class="fighter female">
+				<div class="fighter-img"></div>
+				<h5>Amanda</h5>
+				<h4 class='votes'><i class="icn-clap"></i> 22 votes</h4>
+			</aside>
+		</div> 
+		<div class="other-articles">
+			<h4><a href="blog.html">More Articles in Blog</a></h4>
+			<div class="grid grid-articles">
+
+				
+
+				
+				<div class="col col-25 article-item" >
+					<div class="article-thumb" style='background-image: url(pics/art-thumbs/art1.jpg)'>
+						<a href="blog-article.html" class="overlay"></a>
+					</div>
+					<a href="blog-article.html" class="article-link">19 Secrets Women Wish You Knew</a>
+				</div>
+				
+				<div class="col col-25 article-item" >
+					<div class="article-thumb" style='background-image: url(pics/art-thumbs/art2.jpg)'>
+						<a href="blog-article.html" class="overlay"></a>
+					</div>
+					<a href="blog-article.html" class="article-link">10 Girls Who Could Beat Any Man</a>
+				</div>
+				
+				<div class="col col-25 article-item" >
+					<div class="article-thumb" style='background-image: url(pics/art-thumbs/art3.jpg)'>
+						<a href="blog-article.html" class="overlay"></a>
+					</div>
+					<a href="blog-article.html" class="article-link">Is It Okay to Give Flowers to Men?</a>
+				</div>
+				
+				<div class="col col-25 article-item" >
+					<div class="article-thumb" style='background-image: url(pics/art-thumbs/art4.jpg)'>
+						<a href="blog-article.html" class="overlay"></a>
+					</div>
+					<a href="blog-article.html" class="article-link">Real Men Dance</a>
+				</div>
+				
+			</div>
+		</div>
+		
+
+		
+			<div class="addition">
+  <h4 class="addition__title">International Flowers Delivery in Moscow, Russia</h4>
+  <div class="addition__text">
+    <p>When you book your Moscow flower delivery we take care of all the details and make sure it really simple. Sending an unforgettable gift is as easy as making a few clicks with your mouse – you won’t even have to leave your chair. Why worry about being late for wedding gifts, birthday celebrations or anniversaries? Why stress about what gift to send to the people you love. At Floraqueen we have arrangements carefully selected to suit any occasion and any taste. Birthday flowers in Moscow will never cause you a headache again! All you need to do is choose one of our unbeatable flower arrangements from around the world, and we look after the rest! Here at FloraQueen we make it easier than ever before to send flowers overseas. Our network of the best locally-based florists in Moscow ensures the on time delivery of the freshest flower arrangements anywhere in this historic city. Additionally we offer express same-day delivery if you require this service of same-day flower delivery in Moscow. Any flower delivery with FloraQueen is guaranteed to brighten their day.</p>
+
+    <svg class="addition__pin" width="30px" height="59px" viewBox="0 0 30 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g transform="translate(-725.000000, -76.000000)" fill="currentColor" stroke="none" stroke-width="1" fill-rule="evenodd" opacity="0.300000012">
+        <path d="M755,91 C755,82.729 748.271,76 740,76 C731.729,76 725,82.729 725,91 C725,98.934 731.195,105.431 739,105.949 L739,134 C739,134.553 739.448,135 740,135 C740.552,135 741,134.553 741,134 L741,105.949 C748.805,105.431 755,98.934 755,91 L755,91 Z M735,91 C732.794,91 731,89.206 731,87 C731,84.794 732.794,83 735,83 C737.206,83 739,84.794 739,87 C739,89.206 737.206,91 735,91 L735,91 Z"></path>
+      </g>
+    </svg>
+    <p>Moscow is the capital of Russia and in fact has nearly 12 million residents, which makes it the most populous city in the whole of Europe. Moscow is a city with a rich history, with the city taking centre stage throughout much of the last century. However, looking past the politics there is so much more to Moscow. It is full of beautiful squares and incredibly impressive buildings, such as St Basil’s Cathedral. If you have loved ones in this majestic city, then you can still let them know they are in your hearts with a flower delivery from our online flower shop. We have made it easier than ever for you to send flowers to Moscow. People love flowers wherever you go in the world, and one of the reasons is because they are able to express emotions better than almost any other gift. A personally chosen arrangement of gorgeous flowers is one of the best gifts you can give someone, and the memories will last a life time. Put a smile on the face of someone special by arranging your Moscow international flower delivery today!</p>
+  </div>
+</div>
+
+		
+	</div>
+</section>
+
+
+  </main>
+
+    
+    <div class="modal modal--promo fade" id="promoModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Don’t Forget About Mother’s Day!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="promo-message">21st September is the Mother’s day. Order flowers for her right now on this date and <strong>get 10% discount.</strong></p>
+        <a href="#" class="btn btn-default btn-full">Make my Mom Happy</a>
+      </div>
+      <div class="promo-image" style="background-image: url(images/modal-adv-image.jpg);"></div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+</div>
+    <div class="modal modal--contacts fade" id='contactsModal'>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="grid phones">
+          <div class="col col-50">
+            <p>
+              Number for
+              <select name="country" id="footerCountrySelect" class="select-menu select-ghost select-phone">
+                <option value="+49 (30) 26050" selected>Germany</option>
+                <option value="+7 (707) 7070707">Kazakhstan</option>
+                <option value="+380 (93) 5905092">Ukraine</option>
+              </select>
+            </p>
+            <p class="tel-wrapper"><a href="tel:+493026050">+49 (30) 26050</a></p>
+            <p>24/7 support, call anytime</p>
+          </div>
+          <div class="col col-50">
+            <p>Chat us anytime</p>
+            <p class="tel-wrapper">+7 701 426–05–50</p>
+            <ul class="message-list list--nostyle">
+              <li class="mess-icon" style="background-image: url(images/icons/c-whatsapp.svg)"></li>
+              <li class="mess-icon" style="background-image: url(images/icons/c-telegram.svg)"></li>
+              <li class="mess-icon" style="background-image: url(images/icons/c-viber.svg)"></li>
+              <li class="mess-icon" style="background-image: url(images/icons/c-imessage.svg)"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="contacts-body">
+          <div class="c-info">
+            <h6 class="company">Floradar LLC</h6>
+            <p class="adr-line">
+              Kazakhstan, Almaty, 050000 <br>
+              Abay ave. 364
+            </p>
+
+            <p class="email semi"><a href="mailto:helpme@floradar.me">helpme@floradar.me</a></p>
+            <ul class="c-social list--nostyle">
+              <li class="c-soc-item facebook"><a href="#" class="c-soc-link ">Stay informed</a></li>
+              <li class="c-soc-item twitter"><a href="#" class="c-soc-link">Ask us in Twitter</a></li>
+              <li class="c-soc-item instagram"><a href="#" class="c-soc-link">#happyfloradar</a></li>
+            </ul>
+          </div>
+          <div class="c-map" id="cMap" class="google-map" data-lat="40.7056258" data-lng="-73.97968">
+            <div ></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <h6 class="title--form">Any questions? Don’t hesitate to ask</h6>
+        <form action="#" class="form form--contacts">
+          <div class="form-group form-group--question label-inside">
+            <textarea name="c-question" id="cQuestion" name="message" data-req="true" class="form-control"></textarea>
+            <label for="cQuestion">Enter your question here</label>
+          </div>
+          <div class="form-group form-group--line">
+            <div class="form-group form-group--max label-inside">
+              <input type="text" name="name" data-req="true" id="cName" class="form-control">
+              <label for="cName">Your name</label>
+            </div>
+            <div class="form-group form-group--max label-inside">
+              <input type="text" name="phone" data-req="true" id="cPhone" class="form-control">
+              <label for="cPhone">Your phone</label>
+            </div>
+            <div class="form-group form-group--submit label-inside">
+              <button type="submit" class="btn btn-default">Send</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icn-close"></i></button>
+    </div>
+  </div>
+
+</div>
+
+
+    <footer class="footer dark">
+  <div class="container">
+  	<div class="grid footer-menu">
+
+
+  		<div class="col col-25 footer-menu footer-menu-help">
+  			<h5 class="title--footer">NEED HELP?</h5>
+  			<ul class="list--nostyle">
+  				<li><a href="mailto:helpme@floradar.me">helpme@floradar.me</a></li>
+  				<li class="tel-wrapper">
+	  				<a href="tel:+493026050" class="link-tel">+49 (30) 26050</a>
+	  				for
+	  				<select name="country" id="footerCountrySelect" class="select-menu select-ghost">
+	  					<option value="+49 (30) 26050" selected>Germany</option>
+	  					<option value="+7 (707) 7070707">Kazakhstan</option>
+	  					<option value="+380 (93) 5905092">Ukraine</option>
+	  				</select>
+  				</li>
+  			</ul>
+        <h5 class="title--footer">LET’S BE FRIENDS</h5>
+        <ul class="list--nostyle socials">
+          <li><a href="#" class="socials-item"><span class="socials-item-icon icn-fb"></span></a></li>
+          <li><a href="#" class="socials-item"><span class="socials-item-icon icn-tw"></span></a></li>
+          <li><a href="#" class="socials-item"><span class="socials-item-icon icn-ig"></span></a></li>
+        </ul>
+  		</div> 
+
+      <div class="col col-50 footer-menu footer-menu-center">
+        <h5 class="title--footer">TOP-CLASS FLORISTS AT ONE SITE</h5>
+        <ul class="list--nostyle">
+          <li><a href="shop.html">International Flower Delivery</a></li>
+          <li><a href="where_we_deliver.html">Where We Deliver (7&nbsp;462)</a></li>
+          <li><a href="delivery_policy.html">Delivery Policy</a></li>
+          <li><a href="reviews.html">Customer Reviews (28)</a></li>
+          <li><a href="#contactsModal" data-toggle="modal" data-target="#contactsModal">Contacts</a></li>
+          <li><a href="business.html">For Business</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="partnership.html">Partnership</a></li>
+        </ul>
+      </div> 
+
+      <div class="col col-25 footer-menu footer-menu-side">
+        <div class="promo-block">
+          <p>Recommend us to friends and get promo-code of $5 for each, who pay for order</p>
+          
+            <a href="profile-friends.html" class="btn btn-ghost">Invite Friend</a>
+          
+        </div>
+        <p class="currency-set">Currency:
+          <select  class="cur cur-selector select-menu select-ghost" name="currency" id="currencyFooter">
+            <option value="$" selected="selected" data-min="68" data-max="107">USD</option>
+            <option value="€" data-min="63" data-max="100">EUR</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+            <option value="¥" data-min="7727" data-max="12167">JPY</option>
+          </select>
+        </p>
+      </div> 
+  	</div>
+  </div>
+  <section class="footer-bottom">
+    <div class="container">
+      <div class="copyright grid">
+      <div class="col col-75">
+        <div class="copy">
+          © Floradar LLC
+        </div>
+        <ul class=" copy copy--menu list--nostyle">
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="logo-dev col col-25">
+        <a class="copy rocket-link " href="http://rocketfirm.com" target="_blank">
+          <svg class="rocket-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 14.47"><title>Ракетная фирма</title><path class="logo-letter" d="M5,11.67L3.28,8.51H1.89v3.16H0V2.78H4.17A3.44,3.44,0,0,1,5.41,3,2.6,2.6,0,0,1,6.95,4.51a3.08,3.08,0,0,1,.21,1.14,3,3,0,0,1-.17,1,2.51,2.51,0,0,1-.45.78A2.54,2.54,0,0,1,5.91,8a2.39,2.39,0,0,1-.71.29l2,3.38H5ZM3.88,6.85a1.43,1.43,0,0,0,1-.32,1.09,1.09,0,0,0,.38-0.88,1.09,1.09,0,0,0-.38-0.88,1.43,1.43,0,0,0-1-.32h-2v2.4h2Z"/><path class="logo-letter" d="M13.11,11.83a5,5,0,0,1-1.85-.34A4.29,4.29,0,0,1,8.82,9.08a4.82,4.82,0,0,1-.35-1.85,4.82,4.82,0,0,1,.35-1.85A4.29,4.29,0,0,1,11.26,3,5.25,5.25,0,0,1,15,3a4.29,4.29,0,0,1,2.44,2.41,4.82,4.82,0,0,1,.35,1.85,4.82,4.82,0,0,1-.35,1.85A4.29,4.29,0,0,1,15,11.49,5,5,0,0,1,13.11,11.83Zm0-1.68a2.67,2.67,0,0,0,1.11-.23,2.6,2.6,0,0,0,.85-0.61,2.73,2.73,0,0,0,.55-0.92,3.58,3.58,0,0,0,0-2.32,2.8,2.8,0,0,0-.55-0.93,2.46,2.46,0,0,0-.85-0.61,2.93,2.93,0,0,0-2.23,0,2.39,2.39,0,0,0-.85.61,2.85,2.85,0,0,0-.54.93,3.57,3.57,0,0,0,0,2.32,2.77,2.77,0,0,0,.54.92,2.52,2.52,0,0,0,.85.61A2.67,2.67,0,0,0,13.11,10.15Z"/><path class="logo-letter" d="M23.67,11.83a5.15,5.15,0,0,1-1.87-.33,4.35,4.35,0,0,1-2.5-2.39,4.66,4.66,0,0,1-.37-1.87,4.66,4.66,0,0,1,.37-1.87A4.35,4.35,0,0,1,21.8,3a5.15,5.15,0,0,1,1.87-.33A4.34,4.34,0,0,1,25,2.82a4.14,4.14,0,0,1,1,.49,3.68,3.68,0,0,1,.79.69,5.6,5.6,0,0,1,.57.81l-1.63.8a2.43,2.43,0,0,0-.84-0.92,2.21,2.21,0,0,0-1.25-.37,2.8,2.8,0,0,0-1.11.22,2.63,2.63,0,0,0-.89.61,2.79,2.79,0,0,0-.58.93,3.19,3.19,0,0,0-.21,1.16,3.23,3.23,0,0,0,.21,1.17,2.71,2.71,0,0,0,.58.93,2.68,2.68,0,0,0,.89.61,2.8,2.8,0,0,0,1.11.22,2.24,2.24,0,0,0,1.25-.37,2.36,2.36,0,0,0,.84-0.93l1.63,0.79a5.54,5.54,0,0,1-.57.81,3.87,3.87,0,0,1-.79.7,4,4,0,0,1-1,.49A4.34,4.34,0,0,1,23.67,11.83Z"/><path class="logo-letter" d="M34.53,11.67L31.84,8.11l-0.69.83v2.73H29.25V2.78h1.89v4l3.15-4h2.33L33.09,7l3.77,4.72H34.53Z"/><path class="logo-letter" d="M38.53,11.67V2.78h6.29V4.45h-4.4V6.33h4.3V8h-4.3v2h4.4v1.67H38.53Z"/><path class="logo-letter" d="M49.21,11.67V4.45h-2.6V2.78h7.08V4.45H51.11v7.22H49.21Z"/><path class="logo-letter" d="M73.56,11.67V2.78h6.29V4.45h-4.4V6.33h4.3V8h-4.3v3.68H73.56Z"/><path class="logo-letter" d="M82,11.67V2.78h1.89v8.89H82Z"/><path class="logo-letter" d="M91.18,11.67L89.43,8.51H88v3.16H86.15V2.78h4.17A3.44,3.44,0,0,1,91.57,3,2.6,2.6,0,0,1,93.1,4.51a3.08,3.08,0,0,1,.21,1.14,3,3,0,0,1-.17,1,2.51,2.51,0,0,1-.45.78,2.54,2.54,0,0,1-.63.53,2.39,2.39,0,0,1-.71.29l2,3.38H91.18ZM90,6.85a1.43,1.43,0,0,0,1-.32,1.09,1.09,0,0,0,.38-0.88A1.09,1.09,0,0,0,91,4.77a1.43,1.43,0,0,0-1-.32H88v2.4h2Z"/><path class="logo-letter" d="M102.92,11.67V5.45l-2.51,6.22H99.59L97.08,5.45v6.22H95.19V2.78h2.65L100,8.16l2.16-5.37h2.66v8.89h-1.89Z"/><path class="logo-icon" d="M70.57,7.23a7.24,7.24,0,1,0-7.24,7.24A7.23,7.23,0,0,0,70.57,7.23ZM61.75,12c-0.36.07-.32-0.1-0.21-0.25l0.15-.17c0.77-.87,1.37-1.19.37-1.19s-1.32,0-1.59-.28h0a2.62,2.62,0,0,1-.28-1.59c0-1-.32-0.4-1.2.37L58.81,9c-0.15.11-.32,0.15-0.25-0.21A5.23,5.23,0,0,1,60,6.14a12,12,0,0,1,2.38-.89c2.29-1.65,4.48-2.31,4.95-2s-0.32,2.65-2,4.95a12,12,0,0,1-.89,2.38A5.23,5.23,0,0,1,61.75,12Z"/><path class="logo-icon" d="M65.08,6.78A1.24,1.24,0,0,1,63.79,8,1.25,1.25,0,1,1,65.08,6.78Z"/></svg>
+          <span class="logo-year">2017</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+</footer>
+
+    <div class='chat-help'>
+  <div class='wrapper'>
+    <i class='icon'><img src="images/icons/call-me.svg" alt=""></i>
+    <p class='chat'>Chat-us</p>
+    <p class='numbrs'>53 738</p>
+    <p class='numbrs-desc'>Bouquets have been delivered</p>
+    <p class='help'>Help</p>
+  </div>
+</div>
+
+
+
+    <script src="scripts/vendor.min.js"></script>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    <script src="scripts/main.min.js"></script>
+
+</body>
+</html>

@@ -8,6 +8,14 @@
     <meta name="viewport" content="width=device-width">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" href="favicon.ico" />
+    <!--[if IE ]>
+    <script>
+      document.write('<'+'script src="//cdn.polyfill.io/v1/polyfill.min.js?ua=ie/'+document.documentMode+'"></'+'script>');
+    </script>
+<![endif]-->
+    <!--[if !IE]>-->
+    <script src="//cdn.polyfill.io/v1/polyfill.min.js"></script>
+    <!--<![endif]-->
     
     <link rel="stylesheet" href="styles/main.min.css">
     <script src="scripts/vendor/modernizr.min.js"></script>
@@ -17,6 +25,7 @@
   </head>
   <body>
     <!--[if lt IE 10]>
+
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header class="header">
