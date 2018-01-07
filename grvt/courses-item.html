@@ -12,48 +12,10 @@
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
-    <div class="orbits">
-      <svg width="1600" height="1113" viewBox="0 0 1600 1113" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient fx="50%" fy="50%" id="a">
-            <stop stop-color="#FFF" offset="0%" />
-            <stop stop-color="#E7E9ED" offset="100%" /> </radialGradient>
-          <radialGradient fx="50%" fy="50%" id="b">
-            <stop stop-color="#FFF" offset="0%" />
-            <stop stop-color="#E8E9ED" offset="100%" /> </radialGradient>
-        </defs>
-        <g transform="translate(0 -487)" fill="none" fill-rule="evenodd">
-          <circle fill="#F0F0F6" cx="800" cy="800" r="800" />
-          <circle fill="url(#a)" cx="800" cy="800" r="600" />
-          <circle fill="url(#b)" cx="800" cy="800" r="400" />
-          <circle fill="url(#a)" cx="800" cy="800" r="200" />
-          <g class="planet" transform="translate(418 940)">
-            <text font-size="19" fill="#989BA8">
-              <tspan x="36" y="22">Учим хорошему дизайну</tspan>
-            </text>
-            <circle fill="#1E4BFF" cx="12" cy="14" r="12" /> </g>
-          <g class="planet" transform="translate(246 615)">
-            <text font-size="19" fill="#989BA8">
-              <tspan x="0" y="34">Делаем крутые</tspan>
-              <tspan x="0" y="62">фирменные стили</tspan>
-            </text>
-            <circle fill="#1E4BFF" cx="915" cy="12" r="12" /> </g>
-          <g class="planet" transform="translate(210 614)">
-            <text font-size="19" fill="#989BA8">
-              <tspan x="975" y="18">Создаем</tspan>
-              <tspan x="1056.585" y="18"> </tspan>
-              <tspan x="1061.62" y="18">дизайн</tspan>
-              <tspan x="1129.7157" y="18"> </tspan>
-              <tspan x="975" y="45">среды</tspan>
-            </text>
-            <circle fill="#1E4BFF" cx="12" cy="29" r="12" /> </g>
-        </g>
-      </svg>
-    </div>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header class="header">
+    <header class="header light">
       <div class="container">
         <a href="index.html" class="link link--logo">
           <svg class="desktop" width="210" height="24" viewBox="0 0 210 24" fill="#1E4BFF" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +37,7 @@
               <a href="school.html" class="link link--fade">Школа</a>
             </li>
             <li>
-              <a href="courses.html" class="link link--fade">Курсы</a>
+              <a href="courses.html" class="link link--fade is-active">Курсы</a>
             </li>
             <li>
               <a href="contacts.html" class="link link--fade">Контакты</a>
@@ -86,136 +48,97 @@
     </header>
     <main>
       <div class="container">
-        <div class="hero">
-          <h1 class="hero__title">Гравитация</h1>
-          <div class="hero__text"> «Гравитация» — студия и школа графического дизайна. Решаем задачи бизнеса с помощью дизайна, учим этому других. В работе и обучении руководствуемся пользой и здравым смыслом. </div>
-        </div>
+        <section class="top light">
+          <div class="top__bg" style="background-color: #684F99;"></div>
+          <figure class="top__image">
+            <img src="pics/courses/sample-top-image.jpg" alt="Описание" /> </figure>
+          <h2 class="top__title">Абстракция или меловой леттеринг</h2>
+          <p class="top__info">
+            <span class="mobile-block">120 000 ₸ · 24 занятия</span>
+            <span class="desktop">&nbsp;·&nbsp;</span>
+            <span class="mobile-block">5 января – 5 февраля</span>
+          </p>
+          <span class="top__plate">Запись по телефону +7 727 255-54-54</span>
+        </section>
         <section class="content">
-          <h3 class="section__title">Недавно сделали</h3>
+          <div class="grid">
+            <article class="col article article--main">
+              <h3>Для кого курс</h3>
+              <p>Курс рассчитан на дизайнеров, иллюстраторов и всех тех, кто хочет освоить разнообразные приемы создания логотипов и почувствовать себя увереннее в каждом из них. На каждом стиле мы остановимся подробнее и уделим много внимания практике.
+                Если у вас уже есть опыт в каллиграфии — это будет несомненным плюсом. Если вы работали, в основном, с наборными шрифтами, то этот курс поможет вам лучше понять форму букв. </p>
+              <h3>Какой результат</h3>
+              <p>Участники приобретут практические навыки работы со шрифтом и смогут применить их в работе для создание собственных логотипов. Понимание и знание разнообразных стилистик позволит вам делать более точный выбор шрифта для ваших проектов в брендинге
+                или графическом дизайне, в целом.</p>
+              <figure>
+                <img src="pics/courses/sample-article-image.jpg" alt="описание"> </figure>
+              <h3>Программа курса</h3>
+              <p>Мы верим, что учиться и работать нужно с горящими глазами. Мы верим, что можно учить так, что искры интереса превратятся в пламя увлеченности. Мы знаем, что учиться здорово в любом возрасте и это помогает нам оставаться любопытными, а значит
+                — юными.</p>
+              <h4>Предметы</h4>
+              <ul>
+                <li>— Теория дизайна</li>
+                <li>— Illustrator</li>
+                <li>— Photoshop </li>
+                <li>— InDesign</li>
+                <li>— Типографика</li>
+                <li>— Арт-дирекшн</li>
+              </ul>
+              <h3>Преподаватели</h3>
+              <p>
+                <a href="#">Юлиана Моргун</a> — шрифтовой дизайнер, арт-директор по типографикев type.today.Специализируется как на исторических шрифтах, так и на их их современных формах. Является сторонницей совмещения аналитического и экспериментального подхода.</p>
+              <p>
+                <a href="#">Андрей Дегтярев</a> — веб-дизайнер, шрифтовой дизайнер. Основной профиль работ — сайты с крепкой типографикой и внимательная работа с контентом. Уверен, что хорошая типографика — 80% любого проекта.</p>
+              <div class="likely likely-big">
+                <div class="facebook">Рассказать</div>
+                <div class="vkontakte">Поделиться</div>
+                <div class="twitter">Чирикнуть</div>
+                <!-- <div class="pinterest">Pin</div>
+  <div class="odnoklassniki">Like</div>
+  <div class="telegram">Send</div>
+  <div class="linkedin">Share</div>
+  <div class="whatsapp">Send</div> --></div>
+            </article>
+          </div>
+        </section>
+        <section class="content content--line">
+          <h2 class="section__title">Популярные курсы</h2>
           <div class="last-works">
             <div class="grid">
               <div class="col col--1-3">
                 <div class="card">
-                  <a href="works-item.html" class="card__image">
-                    <img src="pics/thumb_1.jpg" alt="Логотип диджитал агентства Geek Llama"> </a>
-                  <a href="works-item.html" class="link">Логотип диджитал агентства Geek Llama</a>
+                  <a href="courses-item.html" class="card__image">
+                    <img src="pics/courses/adv/thumb_1.jpg"> </a>
+                  <h4>
+                    <a href="courses-item.html" class="link">Итальянское письмо</a>
+                  </h4>
+                  <p class="price">230 000 ₸</p>
+                  <p class="success">Набираем</p>
                 </div>
               </div>
               <div class="col col--1-3">
                 <div class="card">
-                  <a href="works-item.html" class="card__image">
-                    <img src="pics/thumb_2.jpg" alt="Логотип для пространства ARTХАУС"> </a>
-                  <a href="works-item.html" class="link">Логотип для пространства ARTХАУС</a>
+                  <a href="courses-item-closed.html" class="card__image">
+                    <img src="pics/courses/adv/thumb_2.jpg"> </a>
+                  <h4>
+                    <a href="courses-item-closed.html" class="link">Абстракция или меловой леттеринг</a>
+                  </h4>
+                  <p class="price">120 000 ₸</p>
+                  <p class="grey">Набор закрыт</p>
                 </div>
               </div>
               <div class="col col--1-3">
                 <div class="card">
-                  <a href="works-item.html" class="card__image">
-                    <img src="pics/thumb_3.jpg" alt="Логотип барбершопа Unicut"> </a>
-                  <a href="works-item.html" class="link">Логотип барбершопа Unicut</a>
+                  <a href="courses-item.html" class="card__image">
+                    <img src="pics/courses/adv/thumb_3.jpg" alt="Логотип барбершопа Unicut"> </a>
+                  <h4>
+                    <a href="courses-item.html" class="link">Графический дизайн для новичков</a>
+                  </h4>
+                  <p class="price">120 000 ₸</p>
+                  <p class="success">Набираем</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="content whatwedo">
-          <h3 class="section__title">Мы делаем</h3>
-          <div class="grid">
-            <div class="col col--1-3">
-              <div class="card">
-                <img src="images/whatwedo/icon_1.svg" alt="Брендинг" class="card__icon" />
-                <div>
-                  <h4>Брендинг</h4>
-                  <p>Нейминг, логотип, брендбук, фирменный стиль, печатные материалы.</p>
-                </div>
-              </div>
-            </div>
-            <!-- col-end -->
-            <div class="col col--1-3">
-              <div class="card">
-                <img src="images/whatwedo/icon_2.svg" alt="Графический дизайн" class="card__icon" />
-                <div>
-                  <h4>Графический дизайн</h4>
-                  <p>Инфографика, пиктограммы, иллюстрации, многостраничные издания.</p>
-                </div>
-              </div>
-            </div>
-            <!-- col-end -->
-            <div class="col col--1-3">
-              <div class="card">
-                <img src="images/whatwedo/icon_3.svg" alt="Средовой дизайн" class="card__icon" />
-                <div>
-                  <h4>Средовой дизайн</h4>
-                  <p>Выставочные стенды, музеи, экспозиции, витрины, малые архитектурные формы.</p>
-                </div>
-              </div>
-            </div>
-            <!-- col-end -->
-            <div class="col col--1-3">
-              <div class="card">
-                <img src="images/whatwedo/icon_4.svg" alt="Дизайн интерфейсов" class="card__icon" />
-                <div>
-                  <h4>Дизайн интерфейсов</h4>
-                  <p>Сайты, мобильные приложения, программы.</p>
-                </div>
-              </div>
-            </div>
-            <!-- col-end -->
-            <div class="col col--1-3">
-              <div class="card">
-                <img src="images/whatwedo/icon_5.svg" alt="Типографика" class="card__icon" />
-                <div>
-                  <h4>Типографика</h4>
-                  <p>Шрифты, леттеринг, верстка печатных материалов.</p>
-                </div>
-              </div>
-            </div>
-            <!-- col-end -->
-            <div class="col col--1-3">
-              <div class="card">
-                <img src="images/whatwedo/icon_6.svg" alt="Копирайтинг" class="card__icon" />
-                <div>
-                  <h4>Копирайтинг</h4>
-                  <p>Нейминг, редактура, рерайтинг.</p>
-                </div>
-              </div>
-            </div>
-            <!-- col-end -->
-          </div>
-        </section>
-        <section class="content about">
-          <div class="grid">
-            <div class="col col--2-3">
-              <h3>Гравитация – это еще и&nbsp;школа, где&nbsp;начинающие дизайнеры смогут получить базовые знания и опыт, а&nbsp;продвинутые – улучшить навыки.</h3>
-            </div>
-          </div>
-          <figure>
-            <img src="pics/big_image.jpg" alt="описание"> </figure>
-        </section>
-        <section class="content">
-          <h3 class="section__title">Кому школа может быть полезна</h3>
-          <div class="grid">
-            <div class="col col--1-3">
-              <div class="card">
-                <h4>Школьникам и студентам</h4>
-                <p>Поможем освоить профессию графического дизайнера, научим каллиграфии, расскажем как работает рекламное агентство.</p>
-              </div>
-            </div>
-            <div class="col col--1-3">
-              <div class="card">
-                <h4>Профессионалам</h4>
-                <p>Поможем углубить знания в нужной области. Расскажем о своем опыте и приемах, которые нельзя найти в интернете.</p>
-              </div>
-            </div>
-            <div class="col col--1-3">
-              <div class="card">
-                <h4>Компаниям</h4>
-                <p>Поработаем над дизайнерскими командами, выслушаем проблемы и предложим решения.</p>
-              </div>
-            </div>
-          </div>
-          <!-- grid end -->
-          <a href="courses.html" class="button">Посмотреть курсы</a>
         </section>
       </div>
     </main>
@@ -243,7 +166,7 @@
                     <a href="school.html" class="link link--fade">Школа</a>
                   </li>
                   <li>
-                    <a href="courses.html" class="link link--fade">Курсы</a>
+                    <a href="courses.html" class="link link--fade is-active">Курсы</a>
                   </li>
                   <li>
                     <a href="contacts.html" class="link link--fade">Контакты</a>
@@ -289,7 +212,7 @@
               <a href="school.html" class="link link--fade">Школа</a>
             </li>
             <li>
-              <a href="courses.html" class="link link--fade">Курсы</a>
+              <a href="courses.html" class="link link--fade is-active">Курсы</a>
             </li>
             <li>
               <a href="contacts.html" class="link link--fade">Контакты</a>
