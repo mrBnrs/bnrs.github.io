@@ -757,99 +757,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.tickets, new cjs.Rectangle(-50.1,-11.2,100.3,22.4), null);
 
 
-(lib.t2 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer_1
-	this.instance = new lib.Symbol44();
-	this.instance.parent = this;
-	this.instance.setTransform(106,16);
-
-	this.instance_1 = new lib.Symbol43();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(91.9,16);
-
-	this.instance_2 = new lib.Symbol42();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(69.9,16);
-
-	this.instance_3 = new lib.Symbol41();
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(47.5,16);
-
-	this.instance_4 = new lib.Symbol40();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(27.2,16);
-
-	this.instance_5 = new lib.Symbol39();
-	this.instance_5.parent = this;
-	this.instance_5.setTransform(7.3,16);
-
-	this.instance_6 = new lib.Symbol38();
-	this.instance_6.parent = this;
-	this.instance_6.setTransform(-13.2,16);
-
-	this.instance_7 = new lib.Symbol37();
-	this.instance_7.parent = this;
-	this.instance_7.setTransform(-33.3,16);
-
-	this.instance_8 = new lib.Symbol36();
-	this.instance_8.parent = this;
-	this.instance_8.setTransform(-53,16);
-
-	this.instance_9 = new lib.Symbol35();
-	this.instance_9.parent = this;
-	this.instance_9.setTransform(-82.5,16);
-
-	this.instance_10 = new lib.Symbol31();
-	this.instance_10.parent = this;
-	this.instance_10.setTransform(-103.9,16);
-
-	this.instance_11 = new lib.Symbol30();
-	this.instance_11.parent = this;
-	this.instance_11.setTransform(77.1,-16);
-
-	this.instance_12 = new lib.Symbol29();
-	this.instance_12.parent = this;
-	this.instance_12.setTransform(56.3,-16);
-
-	this.instance_13 = new lib.Symbol28();
-	this.instance_13.parent = this;
-	this.instance_13.setTransform(38.5,-16);
-
-	this.instance_14 = new lib.Symbol27();
-	this.instance_14.parent = this;
-	this.instance_14.setTransform(19.1,-16);
-
-	this.instance_15 = new lib.Symbol26();
-	this.instance_15.parent = this;
-	this.instance_15.setTransform(-1.6,-16);
-
-	this.instance_16 = new lib.Symbol25();
-	this.instance_16.parent = this;
-	this.instance_16.setTransform(-21.5,-16);
-
-	this.instance_17 = new lib.Symbol24();
-	this.instance_17.parent = this;
-	this.instance_17.setTransform(-41.7,-16);
-
-	this.instance_18 = new lib.Symbol23();
-	this.instance_18.parent = this;
-	this.instance_18.setTransform(-62.7,-16);
-
-	this.instance_19 = new lib.Symbol22();
-	this.instance_19.parent = this;
-	this.instance_19.setTransform(-82.8,-16);
-
-	this.instance_20 = new lib.Symbol19();
-	this.instance_20.parent = this;
-	this.instance_20.setTransform(-103.2,-16);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_20},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.t2, new cjs.Rectangle(-116,-30,227.7,60), null);
-
-
 (lib.t1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -886,6 +793,117 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this.bek).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.t1, new cjs.Rectangle(-164.5,-15.5,329,31), null);
+
+
+(lib.Symbol47 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.Symbol44();
+	this.instance.parent = this;
+	this.instance.setTransform(82.7,14);
+
+	this.instance_1 = new lib.Symbol43();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(68.6,14);
+
+	this.instance_2 = new lib.Symbol42();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(46.6,14);
+
+	this.instance_3 = new lib.Symbol41();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(24.2,14);
+
+	this.instance_4 = new lib.Symbol40();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(3.9,14);
+
+	this.instance_5 = new lib.Symbol39();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(-16,14);
+
+	this.instance_6 = new lib.Symbol38();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(-36.5,14);
+
+	this.instance_7 = new lib.Symbol37();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(-56.6,14);
+
+	this.instance_8 = new lib.Symbol36();
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(-76.3,14);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Symbol47, new cjs.Rectangle(-88.3,0,176.8,28), null);
+
+
+(lib.Symbol46 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.Symbol35();
+	this.instance.parent = this;
+	this.instance.setTransform(10,14);
+
+	this.instance_1 = new lib.Symbol31();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-11.5,14);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Symbol46, new cjs.Rectangle(-23.5,0,47.1,28), null);
+
+
+(lib.Symbol45 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.Symbol30();
+	this.instance.parent = this;
+	this.instance.setTransform(89.4,14);
+
+	this.instance_1 = new lib.Symbol29();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(68.6,14);
+
+	this.instance_2 = new lib.Symbol28();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(50.9,14);
+
+	this.instance_3 = new lib.Symbol27();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(31.5,14);
+
+	this.instance_4 = new lib.Symbol26();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(10.8,14);
+
+	this.instance_5 = new lib.Symbol25();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(-9.2,14);
+
+	this.instance_6 = new lib.Symbol24();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(-29.4,14);
+
+	this.instance_7 = new lib.Symbol23();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(-50.4,14);
+
+	this.instance_8 = new lib.Symbol22();
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(-70.5,14);
+
+	this.instance_9 = new lib.Symbol19();
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(-90.9,14);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Symbol45, new cjs.Rectangle(-103.6,0,207.3,28), null);
 
 
 (lib.Symbol15 = function(mode,startPosition,loop) {
@@ -979,6 +997,64 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.logo, new cjs.Rectangle(-91.1,-20.1,182.3,40.3), null);
 
 
+(lib.hmar = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_2
+	this.instance = new lib.Symbol3();
+	this.instance.parent = this;
+	this.instance.setTransform(-4.6,132.8);
+	this.instance.alpha = 0.461;
+
+	this.instance_1 = new lib.Symbol3();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-4.6,-43.8);
+	this.instance_1.alpha = 0.461;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	// Layer_3
+	this.instance_2 = new lib.Symbol6();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(4.5,228.8);
+	this.instance_2.alpha = 0.461;
+
+	this.instance_3 = new lib.Symbol6();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(4.5,49);
+	this.instance_3.alpha = 0.461;
+
+	this.instance_4 = new lib.Symbol5();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(-278.9,-109.7);
+	this.instance_4.alpha = 0.461;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.instance_3},{t:this.instance_2}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.hmar, new cjs.Rectangle(-546.6,-124.3,1093.3,428.5), null);
+
+
+(lib.t2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.Symbol47();
+	this.instance.parent = this;
+	this.instance.setTransform(23.3,16,1,1,0,0,0,0,14);
+
+	this.instance_1 = new lib.Symbol46();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-92.5,16,1,1,0,0,0,-0.1,14);
+
+	this.instance_2 = new lib.Symbol45();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(-12.4,-16,1,1,0,0,0,-0.1,14);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.t2, new cjs.Rectangle(-116,-30,227.7,60), null);
+
+
 (lib.info = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -1022,43 +1098,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this.plate).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.info, new cjs.Rectangle(-262.8,0,525.8,570.8), null);
-
-
-(lib.hmar = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer_2
-	this.instance = new lib.Symbol3();
-	this.instance.parent = this;
-	this.instance.setTransform(-4.6,132.8);
-	this.instance.alpha = 0.461;
-
-	this.instance_1 = new lib.Symbol3();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(-4.6,-43.8);
-	this.instance_1.alpha = 0.461;
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
-
-	// Layer_3
-	this.instance_2 = new lib.Symbol6();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(4.5,228.8);
-	this.instance_2.alpha = 0.461;
-
-	this.instance_3 = new lib.Symbol6();
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(4.5,49);
-	this.instance_3.alpha = 0.461;
-
-	this.instance_4 = new lib.Symbol5();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(-278.9,-109.7);
-	this.instance_4.alpha = 0.461;
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.instance_3},{t:this.instance_2}]}).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.hmar, new cjs.Rectangle(-546.6,-124.3,1093.3,428.5), null);
 
 
 // stage content:
@@ -1142,7 +1181,8 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			.from(cont, 1, {y: h, ease: Expo.easeOut}, 'start+=.7')
 			.logoShow(cont.logo, '-=1')
 			.loveShow(cont.t1, '-=.3')
-			.staggerFrom(g(cont.t2, true), 2, {scaleX: 0, scaleY: 0, rotation: '+=15', ease: Elastic.easeOut.config(1, .55)}, .04, '-=.4')
+			//.staggerFrom(g(cont.t2, true), 2, {scaleX: 0, scaleY: 0, rotation: '+=15', ease: Elastic.easeOut.config(1, .55)}, .04, '-=.4')
+			.staggerFrom(g(cont.t2), 1.2, {x:'+=150', alpha: 0, ease: Expo.easeOut}, .1, '-=.4')
 			.from(cont.btn, .8, {y:'+=50', alpha: 0, ease: Expo.easeOut}, '-=.5')
 		
 			.to(cont.btn, .6, {scaleX: '-=.1', scaleY: '-=.1', ease: Back.easeIn}, '+=.5')
