@@ -1115,10 +1115,11 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		tl.logoShow = function(logo, start){
 			this
 				.add('logoshow', start)
-				.from(logo.shp, 1, {scaleX: 0, scaleY: 0, ease: Back.easeOut}, 'logoshow')
+				.from(logo, 1, {y:"+=50", alpha: 0, ease: Expo.easeOut}, 'logoshow')
+				/*.from(logo.shp, 1, {scaleX: 0, scaleY: 0, ease: Back.easeOut}, 'logoshow')
 				.staggerFrom(g(logo.tik), 1.2, {y: "-=30", alpha: 0, ease: Elastic.easeOut.config(1, .55)}, .08, 'logoshow+=.4')
 				.staggerFrom(g(logo.kz), 1, {scaleX: 0, scaleY: 0, ease: Elastic.easeOut.config(1, .55)},.15, '-=.8')
-				.from(logo.plane, 1.2, {scaleX: 0, scaleY: 0, ease: Expo.easeOut}, 'logoshow+=.6')
+				.from(logo.plane, 1.2, {scaleX: 0, scaleY: 0, ease: Expo.easeOut}, 'logoshow+=.6')*/
 			
 			return this;
 		}
@@ -1139,8 +1140,8 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			.staggerFrom(g(this.sun), 1.8, {scaleX: 0, scaleY: 0,ease: Elastic.easeOut.config(1, .55)}, .3, 'start')
 			.staggerFrom(g(this.hm), 1, {y: '+=150', alpha: 0}, .1, 'start+=.2')
 			.from(cont, 1, {y: h, ease: Expo.easeOut}, 'start+=.7')
-			.logoShow(cont.logo, '-=.4')
-			.loveShow(cont.t1, '-=.6')
+			.logoShow(cont.logo, '-=1')
+			.loveShow(cont.t1, '-=.3')
 			.staggerFrom(g(cont.t2, true), 2, {scaleX: 0, scaleY: 0, rotation: '+=15', ease: Elastic.easeOut.config(1, .55)}, .04, '-=.4')
 			.from(cont.btn, .8, {y:'+=50', alpha: 0, ease: Expo.easeOut}, '-=.5')
 		
