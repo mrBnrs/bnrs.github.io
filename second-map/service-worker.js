@@ -15,7 +15,7 @@ importScripts("/second-map/workbox-v3.6.2/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/second-map/workbox-v3.6.2"});
 
 importScripts(
-  "/second-map/precache-manifest.c5f6cd4ad15ed40ac90c58ff950d51be.js"
+  "/second-map/precache-manifest.0a96f913ee7f696202d9cb680b914c25.js"
 );
 
 workbox.clientsClaim();
